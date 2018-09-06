@@ -197,9 +197,9 @@ class AIDScanner:
         # try to install test applet
         result = subprocess.run([self.gp_basic_command, self.gp_auth_flag, '--install', 'test.cap', '--d'],
                                 stdout=subprocess.PIPE)
-
-        # store gp result into log file
         result = result.stdout.decode("utf-8")
+        # store gp result into log file
+
         f = open('{0}\\results\\{1}_class_{2:02X}.txt'.format(self.base_path, package_hex, int(class_token)), 'w')
         f.write(result)
         f.close()

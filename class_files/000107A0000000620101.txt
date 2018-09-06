@@ -1,0 +1,17 @@
+ISO7816:0
+PIN:1
+Shareable:2
+Applet:3
+CardException:4
+CardRuntimeException:5
+AID:6
+ISOException:7
+JCSystem:8
+OwnerPIN:9
+APDU:10
+PINException:11
+APDUException:12
+SystemException:13
+TransactionException:14
+UserException:15
+Util:16
