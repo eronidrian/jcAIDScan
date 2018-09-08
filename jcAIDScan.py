@@ -263,6 +263,99 @@ class AIDScanner:
 
         return import_section
 
+    # This function attempts to detect the classes between range 00-FF for supported packages
+    def check_classes_fullrange(self,import_section, package, uninstall, classes_supported_list):
+
+        class_file_entry_present=False
+
+        f = open('{0}\\template_class\\test\\javacard\\Import.cap'.format(self.base_path), 'wb')
+        f.write(bytes.fromhex(import_section))
+        f.close()
+
+        file_name='{0}\\class_files\\{1}.txt'.format(self.base_path, package.serialize())
+        if os.path.exists(file_name):
+            f = open(file_name, 'r')
+            class_check = f.read().splitlines()
+            f.close()
+            if len(class_check) > 0:
+                class_detail=[]
+                #Entries present in class file
+                class_file_entry_present=True
+                for class_item in class_check:
+                    # check installation for each class token no
+                    # Firstly check whether the Class is already checked or not.
+                    class_item1, class_item2 = class_item.split(':')
+                    class_detail.append([class_item1,class_item2])
+                    #print(class_detail[-1])
+        else:
+            print("No Class File found for checking\n")
+
+        f = open('{0}\\template_class\\test\\javacard\\ConstantPool.cap'.format(self.base_path), 'rb')
+        hexdata = f.read().hex().upper()
+        f.close()
+        hex_array = bytearray(bytes.fromhex(hexdata))
+
+        for value in range(256):
+            class_token=value
+            class_name = "Unknown"
+            support_index=-1
+            support_found=False
+
+            #Search in Classes_supported_list
+            if len(classes_supported_list)>0:
+                for item_entry in classes_supported_list:
+                    support_index=support_index+1
+                    pack_name,cl_name,cl_token,support = item_entry.split(';')
+                    if all([pack_name==package.get_well_known_name(),cl_token==str(value)]):
+                        class_name=cl_name
+                        support_found=True
+                        break
+
+            if all([support_found==True, not class_file_entry_present]):
+                continue
+
+            if all([support_found==True, class_name != 'Unknown']):
+                continue
+
+            found_in_class_file=False
+            if class_file_entry_present:
+                # Search the token in class_check list
+                for item1, item2 in class_detail:
+                    if str(value)==item2:
+                        class_name=item1
+                        found_in_class_file=True
+                        break
+
+            if all ([support_found==True,found_in_class_file==True]):
+                class_full_name = ''.join(['{0}', ';', '{1}', ';', '{2}',';', '{3}']).format(package.get_well_known_name(), class_name,
+                                                                                             class_token, classes_supported_list[support_index].split(';')[3])
+                classes_supported_list[support_index]=class_full_name
+                continue
+
+            if all([support_found == True, found_in_class_file == False]):
+                continue
+
+            print("Checking for {0}; \t Class Token {1:02X}\n".format(package.serialize(), int(class_token)))
+            hex_array[43] = int(class_token)
+            f = open('{0}\\template_class\\test\\javacard\\ConstantPool.cap'.format(self.base_path), 'wb')
+            f.write(hex_array)
+            f.close()
+            uninstall = self.check_classtoken(package, uninstall, class_token)
+            if uninstall:
+                print("***Class Name {0}.{1} is Supported \n".format(package.get_well_known_name(),
+                                                                     class_name))
+                class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(package.get_well_known_name(),
+                                                                              class_name, class_token)
+                classes_supported_list.append(class_entry)
+            else:
+                print("***Class Name {0}.{1} is Not Supported \n".format(package.get_well_known_name(),
+                                                                         class_name))
+                class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(package.get_well_known_name(),
+                                                                             class_name, class_token)
+                classes_supported_list.append(class_entry)
+
+        return uninstall
+
     # In this function, test.cap is prepared using template from folder template_class
     # The class tokens are read from text file which are stored in class_files folder
     # For each classtoken, ConstantPool.cap file is changed and installation is checked
@@ -277,7 +370,7 @@ class AIDScanner:
             return uninstall
 
         f = open(file_name, 'r')
-        class_check = f.readlines()
+        class_check = f.read().splitlines()
         f.close()
 
         if len(class_check) <= 0:
@@ -293,7 +386,7 @@ class AIDScanner:
                 # check installation for each class token no
                 # Firstly check whether the Class is already checked or not.
                 class_name, class_token = class_item.split(':')
-                class_full_name = ''.join(['{0}', '.', '{1}']).format(package.get_well_known_name(), class_name)
+                class_full_name = ''.join(['{0}', ';', '{1}', ';', '{2}']).format(package.get_well_known_name(), class_name, class_token)
                 if len(classes_supported_list) > 0:
                     if any(class_full_name in included_classes for included_classes in classes_supported_list):
                         continue
@@ -308,14 +401,14 @@ class AIDScanner:
                         if uninstall:
                             print("***Class Name {0}.{1} is Supported \n".format(package.get_well_known_name(),
                                                                                  class_name))
-                            class_entry = ''.join(['{0}', '.', '{1}', ';', 'yes']).format(package.get_well_known_name(),
-                                                                                          class_name)
+                            class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(package.get_well_known_name(),
+                                                                                                      class_name, class_token)
                             classes_supported_list.append(class_entry)
                         else:
                             print("***Class Name {0}.{1} is Not Supported \n".format(package.get_well_known_name(),
                                                                                      class_name))
-                            class_entry = ''.join(['{0}', '.', '{1}', ';', 'no']).format(package.get_well_known_name(),
-                                                                                         class_name)
+                            class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(package.get_well_known_name(),
+                                                                                         class_name, class_token)
                             classes_supported_list.append(class_entry)
                 else:
                     print("Checking for {0}; \t Class Token {1:02X}\n".format(package.serialize(), int(class_token)))
@@ -326,19 +419,19 @@ class AIDScanner:
                     uninstall = self.check_classtoken(package, uninstall, class_token)
                     if uninstall:
                         print("***Class Name {0}.{1} is Supported \n".format(package.get_well_known_name(), class_name))
-                        class_entry = ''.join(['{0}', '.', '{1}', ';', 'yes']).format(package.get_well_known_name(),
-                                                                                      class_name)
+                        class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(package.get_well_known_name(),
+                                                                                      class_name, class_token)
                         classes_supported_list.append(class_entry)
                     else:
                         print("***Class Name {0}.{1} is Not Supported \n".format(package.get_well_known_name(),
                                                                                  class_name))
-                        class_entry = ''.join(['{0}', '.', '{1}', ';', 'no']).format(package.get_well_known_name(),
-                                                                                     class_name)
+                        class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(package.get_well_known_name(),
+                                                                                     class_name, class_token)
                         classes_supported_list.append(class_entry)
 
         return uninstall
 
-    def test_aid(self, tested_package_aid, supported_list, tested_list, classes_supported_list):
+    def test_aid(self, tested_package_aid, supported_list, tested_list, classes_supported_list, class_test_option):
         imported_packages = []
         imported_packages.append(javacard_framework)
         #imported_packages.append(java_lang)  # do not import java_lang as default (some cards will then fail to load)
@@ -354,7 +447,11 @@ class AIDScanner:
             # Class detection related change
             # The Package AID is supported now using check_classes function all the classes
             # belonging to this packages will be tested
-            self.is_installed = self.check_classes(import_content, tested_package_aid, self.is_installed, classes_supported_list)
+            if class_test_option==False:
+                self.is_installed = self.check_classes(import_content, tested_package_aid, self.is_installed, classes_supported_list)
+            else:
+                self.is_installed = self.check_classes_fullrange(import_content, tested_package_aid, self.is_installed,
+                                                       classes_supported_list)
         else:
             print("   {0} v{1}.{2} is NOT supported ".format(tested_package_aid.get_aid_hex(), tested_package_aid.major,
                                                              tested_package_aid.minor))
@@ -374,7 +471,7 @@ class AIDScanner:
         print(" #################\n")
 
 
-    def run_scan_recursive(self, modified_ranges_list, package_aid, major, minor, supported, tested, classes_supported_list):
+    def run_scan_recursive(self, modified_ranges_list, package_aid, major, minor, supported, tested, classes_supported_list, class_test_option):
         # recursive stop
         if len(modified_ranges_list) == 0:
             return
@@ -400,17 +497,17 @@ class AIDScanner:
                 #  if yes, then check prepared AID
                 new_package = PackageAID(local_package_aid, major, minor)
                 # test current package
-                self.test_aid(new_package, supported, tested, classes_supported_list)
+                self.test_aid(new_package, supported, tested, classes_supported_list, class_test_option)
                 self.num_tests += 1
             else:
                 # if no, run additional recursion
-                self.run_scan_recursive(local_modified_ranges_list, local_package_aid, major, minor, supported, tested, classes_supported_list)
+                self.run_scan_recursive(local_modified_ranges_list, local_package_aid, major, minor, supported, tested, classes_supported_list, class_test_option)
 
         # print supported after iterating whole range
         self.print_supported(supported)
 
 
-    def run_scan(self, cfg, supported, tested, classes_supported_list):
+    def run_scan(self, cfg, supported, tested, classes_supported_list, class_test_option):
         print("################# BEGIN ###########################\n")
         print(cfg)
         print("###################################################\n")
@@ -437,12 +534,12 @@ class AIDScanner:
 
                 # Now recursively iterate via specified ranges (if provided)
                 if cfg.modified_ranges:
-                    self.run_scan_recursive(cfg.modified_ranges, new_package_aid, major, minor, supported, tested, classes_supported_list)
+                    self.run_scan_recursive(cfg.modified_ranges, new_package_aid, major, minor, supported, tested, classes_supported_list, class_test_option)
                 else:
                     # nor modification ranges, just test package with current combination of major and minor version
                     new_package = PackageAID(new_package_aid, major, minor)
                     # test current package
-                    self.test_aid(new_package, supported, tested, classes_supported_list)
+                    self.test_aid(new_package, supported, tested, classes_supported_list, class_test_option)
                     self.num_tests += 1
 
         # end performance measurements
@@ -456,7 +553,7 @@ class AIDScanner:
         print(cfg)
         print("#################################################\n")
 
-    def scan_jc_api_305(self, card_info, supported, tested, classes_supported):
+    def scan_jc_api_305(self, card_info, supported, tested, classes_supported,class_test_option):
         MAX_MAJOR = 1
         ADDITIONAL_MINOR = 1
         # minor is tested with ADDITIONAL_MINOR additional values higher than expected from the given version of JC SDK).
@@ -464,29 +561,29 @@ class AIDScanner:
 
         # intermediate results are saved after every tested package to preserve info even in case of card error
 
-        self.run_scan(TestCfg("A0000000620001", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620001", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620002", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620002", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620003", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
-        self.save_scan(card_info, supported, tested, classes_supported)
-
-        self.run_scan(TestCfg("A0000000620101", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported)
-        self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A000000062010101", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
-        self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620102", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620003", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
 
-        self.run_scan(TestCfg("A0000000620201", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620101", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620202", 1, MAX_MAJOR, 0, 3 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A000000062010101", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620203", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620102", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620204", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+
+        self.run_scan(TestCfg("A0000000620201", 1, MAX_MAJOR, 0, 6 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
-        self.run_scan(TestCfg("A0000000620205", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620202", 1, MAX_MAJOR, 0, 3 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
+        self.save_scan(card_info, supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620203", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
+        self.save_scan(card_info, supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620204", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
+        self.save_scan(card_info, supported, tested, classes_supported)
+        self.run_scan(TestCfg("A0000000620205", 1, MAX_MAJOR, 0, 0 + ADDITIONAL_MINOR), supported, tested, classes_supported, class_test_option)
         self.save_scan(card_info, supported, tested, classes_supported)
 
         self.print_supported(supported)
@@ -534,9 +631,9 @@ class AIDScanner:
                 f.write("{0}; \t{1}; \t{2};\n".format(aid.serialize(), "yes" if tested[aid] else "no", aid.get_readable_string()))
 
         f.write("\n")
-        f.write("CLASS NAME; IS SUPPORTED; \n")
+        f.write("CLASS NAME; CLASS TOKEN NO; IS SUPPORTED; \n")
         for class_name in classes_supported:
-            f.write("{0}\n".format(class_name))
+            f.write("{0}.{1};{2};{3}\n".format(class_name.split(';')[0],class_name.split(';')[1],class_name.split(';')[2],class_name.split(';')[3]))
 
         f.close()
 
@@ -601,12 +698,18 @@ class AIDScanner:
         # obtain card basic info
         card_info = self.get_card_info(self.card_name)
 
+        option = input("Class to be tested between values 00-FF range? (yes/no): ")
+        if option == "yes":
+            class_test_option=True
+        else:
+            class_test_option=False
+
         # scan standard JC API
         supported = []
         classes_supported = []
         tested = {}
         elapsed = -time.perf_counter()
-        self.scan_jc_api_305(card_info, supported, tested, classes_supported)
+        self.scan_jc_api_305(card_info, supported, tested, classes_supported,class_test_option)
         elapsed += time.perf_counter()
         print("Complete test elapsed time: {0:0.2f}s\n".format(elapsed))
         # create file with results
