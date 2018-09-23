@@ -1,19 +1,15 @@
-import shutil
 import os
 import subprocess
-from shutil import copyfile
-import time
-import textwrap
 
 SCRIPT_VERSION = '0.1.1'
 BASE_PATH = '.'
 
 
-
 def print_info():
     print(
-        "jcExtractor v{0} tool for extracting the AIDs of JavaCard packages and their class details.\nCheck https://github.com/petrs/jcAIDScan/ "
-        "for the newest version and documentation.\n2018, Petr Svenda\n. For extraction of the information, please put the intended Java Card Kit folder"
+        "jcExtractor v{0} tool for extracting the AIDs of JavaCard packages and their class details."
+        "\nCheck https://github.com/petrs/jcAIDScan/ for the newest version and documentation.\n2018, Petr Svenda\n."
+        " For extraction of the information, please put the intended Java Card Kit folder"
         " in current directory. Also ensure that Java Card Kit folder has api_export_files sub-directory".format(
             SCRIPT_VERSION))
 
@@ -21,12 +17,11 @@ def print_info():
 def main():
     export_files = []
     package_name = []
-    class_name = []
 
     print_info()
 
     kit_directory = input('Enter Java Card Kit Directory Name (Please ensure the folder is in current directory: ')
-    java_os = input('Java OS Version(E.g. 2.2.2: ')
+    java_os = input('Java OS Version(E.g. 2.2.2): ')
     classdir = "-classdir " + kit_directory + "\\api_export_files"
     # exptool = kit_directory+"\\bin\\exp2text"
 
@@ -72,7 +67,7 @@ def main():
     # Till this point, we have all the package names and text files of each export files
     # In exp file, package related information is found in Constant_Package_info section
     # and Class related information found in class_info section
-    search = ["CONSTANT_Package_info", "class_info"]
+    search = ["CONSTANT_Package_info", "class_info", "method_info"]
 
     f1 = open(BASE_PATH + "\\{0}".format(java_os + "_package_details.txt"),
               'w')  # This file stores the information about the packages
@@ -80,7 +75,8 @@ def main():
 
     export_file_index = -1  # This variable is used to keep track of the location in export_files list
 
-    # Each export file is searched for package and class details. Every exp file has package information first and then class information
+    # Each export file is searched for package and class details. Every exp file has package information first
+    #  and then class information
 
     for entry in export_files:
         export_file_index = export_file_index + 1
@@ -145,9 +141,33 @@ def main():
                 class_name = class_strings[len(class_strings) - 1]
 
                 # Now extract Token No
-                token_no = file_content[index + 1].split("token\t", 1)[1]
-                f2.write(class_name + ":" + token_no + "\n")
+                class_token_no = file_content[index + 1].split("token\t", 1)[1]
+                f2.write(class_name + ":" + class_token_no + "\n")
                 index = index + 1
+                method_index = index
+                # Now find the method details from current index no.
+                f3 = open(BASE_PATH + "\\method_files\\{0}_{1}.txt".format(full_aid, class_token_no), 'w')
+                for line_item1 in file_content[method_index:]:
+                    if search[1] in line_item1:
+                        f3.close()
+                        break
+                    if search[2] in line_item1:  # Method Info structure found
+                        method_token_no = file_content[method_index + 1].split("token\t", 1)[1]
+                        if all(["static" not in file_content[method_index + 2],
+                                "abstract" not in file_content[method_index + 2]]):
+                            method_index = method_index + 1
+                            continue
+                        else:
+                            if "static" in file_content[method_index + 2]:
+                                method_type = "static"
+                            else:
+                                method_type = "abstract"
+                        method_name = file_content[method_index + 3].split("// ", 1)[1]
+                        f3.write(method_name + ":" + method_token_no + ":" + method_type + "\n")
+                        method_index = method_index + 1
+                    else:
+                        method_index = method_index + 1
+                f3.close()
             else:
                 index = index + 1
                 continue

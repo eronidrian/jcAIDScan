@@ -168,6 +168,7 @@ java_lang = PackageAID(b'\xA0\x00\x00\x00\x62\x00\x01', 1, 0)
 package_template = b'\xA0\x00\x00\x00\x62\x01\x01'
 
 
+# noinspection PyMethodMayBeStatic
 class AIDScanner:
     base_path = BASE_PATH
     force_uninstall = FORCE_UNINSTALL  # if true, test applet will be always attempted to be removed.
@@ -248,13 +249,14 @@ class AIDScanner:
         f.write(result)
         f.close()
 
-        # heuristics to detect successful installation - log must contain error code 0x9000 followed by SCardEndTransaction
+        # heuristics to detect successful installation-log must contain errorcode 0x9000 followed by SCardEndTransaction
         # If installation fails, different error code is present
         if result.find('9000\r\nSCardEndTransaction()') != -1:
             return True
         else:
             return False
 
+    # noinspection PyMethodMayBeStatic
     def format_import(self, packages_list):
         total_len = 1  # include count of number of packages
         for package in packages_list:
@@ -352,14 +354,16 @@ class AIDScanner:
                 if uninstall:
                     print("***Class Name {0}.{1} is Supported \n".format(package.get_well_known_name(),
                                                                          class_name))
-                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(package.get_well_known_name(),
-                                                                                              class_name, class_token)
+                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(
+                        package.get_well_known_name(),
+                        class_name, class_token)
                     classes_supported_list.append(class_entry)
                 else:
                     print("***Class Name {0}.{1} is Not Supported \n".format(package.get_well_known_name(),
                                                                              class_name))
-                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(package.get_well_known_name(),
-                                                                                             class_name, class_token)
+                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(
+                        package.get_well_known_name(),
+                        class_name, class_token)
                     classes_supported_list.append(class_entry)
 
         return uninstall
@@ -625,8 +629,8 @@ class AIDScanner:
             "jcAIDScan v{0} tool for scanning supported JavaCard packages.\nCheck https://github.com/petrs/jcAIDScan/ "
             "for the newest version and documentation.\n2018, Petr Svenda\n".format(SCRIPT_VERSION))
 
-        info = "WARNING: this is a research tool and expects that you understand what you are doing. Your card may be " \
-               "permanently blocked in case of incorrect use."
+        info = "WARNING: this is a research tool and expects that you understand what you are doing. Your card may be" \
+               " permanently blocked in case of incorrect use."
 
         print(textwrap.fill(info, 80))
 
@@ -640,7 +644,7 @@ class AIDScanner:
 
         if len(class_range) < 1:
             print("Range not given, the default range for class detection 00-FF will be considered for this run")
-            class_range.append([0,255])
+            class_range.append([0, 255])
 
         for min_class_range, max_class_range in class_range:
             if max_class_range > 255:
@@ -648,7 +652,7 @@ class AIDScanner:
                 return
 
             if min_class_range < 0:
-                print("Min Class Range should more than or atleast 0")
+                print("Min Class Range should more than or at the least 0")
                 return
 
             if max_class_range < min_class_range:
@@ -675,7 +679,7 @@ class AIDScanner:
 
 def main():
     app = AIDScanner()
-    app.scan_jc_api_305_complete([[0,5],[25,30],[34,37]])  # Max range should not be more than 255
+    app.scan_jc_api_305_complete([[0, 5], [25, 30], [34, 37]])  # Max range should not be more than 255
 
 
 if __name__ == "__main__":

@@ -1,0 +1,2 @@
+getKeyCipher:0:abstract
+setKeyCipher:1:abstract
