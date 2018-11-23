@@ -5,13 +5,13 @@ An automated scanner for installed JavaCard packages (Windows version)
 
 JCVM consists of library packages as per specification by the Java Card Forum. Some of these packages are mandatory to be implemented in the Java Card, and some of the packages are optional. The decision for implementation of the optional packages lies with the manufacturer of the particular smart card family with Java Card platform. jcAIDScan tool is developed to detect the supported packages, classes and methods implemented in the examined Java Card.
 
-Pre-Requisites:
+# Pre-Requisites:
 
 1. Python 3.0.5 or higher
 
 2. Notepad++ or Python IDE (to edit the code if needed)
 
-Detailed usage:
+# Detailed usage:
 
 1. Clone/ Download the jcAIDScan project.
 
