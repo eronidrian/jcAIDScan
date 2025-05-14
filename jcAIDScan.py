@@ -220,36 +220,33 @@ class AIDScanner:
     num_tests = 0  # number of executed tests (for performance measurements)
 
     def check_classtoken(self, package, uninstall, class_token):
-        shutil.make_archive('test.cap', 'zip', '{0}\\template_class\\'.format(self.base_path))
+        shutil.make_archive('test.cap', 'zip', path.join(self.base_path, 'template_class'))
 
         package_hex = package.serialize()
 
         # remove zip suffix
-        os.remove('test.cap')
+        if os.path.exists('test.cap'):
+            os.remove('test.cap')
         os.rename('test.cap.zip', 'test.cap')
         # store used cap file
-        copyfile('test.cap',
-                 '{0}\\results\\test_{1}_class_{2:02X}.cap'.format(self.base_path, package_hex, int(class_token)))
+        copyfile('test.cap', path.join(self.base_path, 'results', 'test_{0}_class_{1:02X}.cap'.format(package_hex, int(class_token))))
 
         # (try to) uninstall previous applet if necessary/required
         if uninstall or self.force_uninstall:
-            subprocess.run([self.gp_basic_command, self.gp_auth_flag, '--uninstall', 'test.cap'],
-                           stdout=subprocess.PIPE)
+            subprocess.run(self.gp_uninstall_command + ['test.cap'], stdout=subprocess.PIPE)
 
         # try to install test applet
-        result = subprocess.run([self.gp_basic_command, self.gp_auth_flag, '--install', 'test.cap', '--d'],
-                                stdout=subprocess.PIPE)
-        result = result.stdout.decode("utf-8")
-        # store gp result into log file
+        result = subprocess.run(self.gp_install_command + ['test.cap'] + ['--d'], stdout=subprocess.PIPE)
 
-        f = open('{0}\\results\\{1}_class_{2:02X}.txt'.format(self.base_path, package_hex, int(class_token)), 'w')
+        # store gp result into log file
+        result = result.stdout.decode("utf-8")
+        f = open(path.join(self.base_path, 'results', '{0}_class_{1:02X}.txt'.format(package_hex, int(class_token))), 'w')
         f.write(result)
         f.close()
 
-        # heuristics to detect successful installation
-        # log must contain error code 0x9000 followed by SCardEndTransaction
+        # heuristics to detect successful installation - log must contain error code 0x9000 followed by SCardEndTransaction
         # If installation fails, different error code is present
-        if result.find('9000\r\nSCardEndTransaction()') != -1:
+        if result.find(self.success_response_heuristics) != -1:
             return True
         else:
             return False
@@ -312,11 +309,11 @@ class AIDScanner:
 
         class_file_entry_present = False
 
-        f = open('{0}\\template_class\\test\\javacard\\Import.cap'.format(self.base_path), 'wb')
+        f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'Import.cap'), 'wb')
         f.write(bytes.fromhex(import_section))
         f.close()
 
-        file_name = '{0}\\class_files\\{1}.txt'.format(self.base_path, package.serialize())
+        file_name = path.join(self.base_path, 'class_files', '{0}.txt'.format(package.serialize()))
         if os.path.exists(file_name):
             f = open(file_name, 'r')
             class_check = f.read().splitlines()
@@ -334,7 +331,7 @@ class AIDScanner:
         else:
             print("No Class File found for checking\n")
 
-        f = open('{0}\\template_class\\test\\javacard\\ConstantPool.cap'.format(self.base_path), 'rb')
+        f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'rb')
         hexdata = f.read().hex().upper()
         f.close()
         hex_array = bytearray(bytes.fromhex(hexdata))
@@ -383,7 +380,7 @@ class AIDScanner:
 
                 print("Checking for {0}; \t Class Token {1:02X}\n".format(package.serialize(), int(class_token)))
                 hex_array[43] = int(class_token)
-                f = open('{0}\\template_class\\test\\javacard\\ConstantPool.cap'.format(self.base_path), 'wb')
+                f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'wb')
                 f.write(hex_array)
                 f.close()
                 uninstall = self.check_classtoken(package, uninstall, class_token)
@@ -815,7 +812,7 @@ class AIDScanner:
 
 def main():
     app = AIDScanner()
-    app.scan_jc_api_305_complete([[0, 5], [25, 30], [34, 37]])  # Max range should not be more than 255
+    app.scan_jc_api_305_complete([[0, 255]])  # Max range should not be more than 255
 
 
 
