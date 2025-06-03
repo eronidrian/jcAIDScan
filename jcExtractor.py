@@ -1,7 +1,8 @@
 import os
 import subprocess
+from os import path
 
-SCRIPT_VERSION = '0.1.1'
+SCRIPT_VERSION = '0.2.1'
 BASE_PATH = '.'
 
 
@@ -22,20 +23,20 @@ def main():
 
     kit_directory = input('Enter Java Card Kit Directory Name (Please ensure the folder is in current directory: ')
     java_os = input('Java OS Version(E.g. 2.2.2): ')
-    classdir = "-classdir " + kit_directory + "\\api_export_files"
+    classdir = "-classdir " + path.join(kit_directory,"api_export_files")
     # exptool = kit_directory+"\\bin\\exp2text"
 
     # Here we find the exp files in recursive directory search
     # Then capture the package name using the path found and stored in package_name list
     # Convert the exp files in text files using Java Card Kit built-in application called exp2text
     # The path for all converted text files is stored in export_files list
-    for root, dirs, files in os.walk("{0}\\{1}\\api_export_files".format(BASE_PATH, kit_directory)):
+    for root, dirs, files in os.walk(path.join(BASE_PATH, kit_directory, "api_export_files")):
         for file in files:
             if file.endswith('.exp'):
-                export_file_path = '{0}\\{1}'.format(root, file)
-                path1 = export_file_path.split("api_export_files\\", 1)[1]
+                export_file_path = path.join(root, file)
+                path1 = export_file_path.split("api_export_files" + path.sep, 1)[1]
                 filename = file.split(".exp", 1)[0]
-                path_details = path1.split("\\")
+                path_details = path1.split(path.sep)
                 package = ''
                 for subpath in path_details:
                     package = package + subpath
@@ -46,14 +47,15 @@ def main():
                 print(package)
                 package_name.append(package)
 
+
                 # Run exp2text program and create a text file of export files.
-                exp2text = "exp2text " + classdir + " " + package
+                exp2text = "./exp2text " + classdir + " " + package
                 result = subprocess.call(exp2text, stdout=subprocess.PIPE, shell=True)
                 if result != 0:
                     print("Extraction failed")
                     return
                 else:
-                    export_text_path = root + "\\" + filename + "_exp.tex"
+                    export_text_path = path.join(root, filename) + "_exp.tex"
                     export_files.append(export_text_path)
 
     # Check whether the conversion of exp files to text file was successful or not
@@ -69,7 +71,7 @@ def main():
     # and Class related information found in class_info section
     search = ["CONSTANT_Package_info", "class_info", "method_info"]
 
-    f1 = open(BASE_PATH + "\\{0}".format(java_os + "_package_details.txt"),
+    f1 = open(path.join(BASE_PATH, java_os + "_package_details.txt"),
               'w')  # This file stores the information about the packages
     f1.write("FULL AID:OS VER:AID:PACKAGE NAME\n")
 
@@ -126,7 +128,7 @@ def main():
 
         # Now searching for Class Info
         # Create a file in class_files with the name of the full package aid
-        f2 = open(BASE_PATH + "\\class_files\\{0}.txt".format(full_aid), 'w')
+        f2 = open(path.join(BASE_PATH, "class_files", full_aid), 'w')
 
         # Search the remaining exp from the previous index value
         # This way each exp file is search from top to bottom only once
@@ -146,7 +148,7 @@ def main():
                 index = index + 1
                 method_index = index
                 # Now find the method details from current index no.
-                f3 = open(BASE_PATH + "\\method_files\\{0}_{1}.txt".format(full_aid, class_token_no), 'w')
+                f3 = open(path.join(BASE_PATH, "method_files", "{0}_{1}.txt".format(full_aid, class_token_no)), 'w')
                 for line_item1 in file_content[method_index:]:
                     if search[1] in line_item1:
                         f3.close()

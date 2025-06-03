@@ -1,5 +1,0 @@
-BioTemplate:0
-OwnerBioTemplate:1
-SharedBioTemplate:2
-BioException:3
-BioBuilder:4

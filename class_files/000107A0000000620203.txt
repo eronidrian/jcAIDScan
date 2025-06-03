@@ -1,3 +1,0 @@
-MemoryAccess:0
-Memory:1
-ExternalException:2

@@ -1,4 +1,0 @@
-getInBlockSize:0:static
-getOutBlockSize:1:static
-getProtocol:2:static
-waitExtension:3:static

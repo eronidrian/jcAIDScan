@@ -1,3 +1,0 @@
-getInstance:0:static
-generateData:1:abstract
-setSeed:2:abstract

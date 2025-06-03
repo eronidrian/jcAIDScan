@@ -1,7 +1,0 @@
-arrayCompare:0:static
-arrayCopy:1:static
-arrayCopyNonAtomic:2:static
-arrayFillNonAtomic:3:static
-getShort:4:static
-makeShort:5:static
-setShort:6:static

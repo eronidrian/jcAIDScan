@@ -1,7 +1,0 @@
-BERTLV:0
-BERTag:1
-ConstructedBERTLV:2
-ConstructedBERTag:3
-PrimitiveBERTLV:4
-PrimitiveBERTag:5
-TLVException:6

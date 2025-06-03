@@ -1,4 +1,0 @@
-check:0:abstract
-getTriesRemaining:1:abstract
-isValidated:2:abstract
-reset:3:abstract

@@ -1,2 +1,0 @@
-install:1:static
-process:7:abstract

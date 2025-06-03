@@ -1,8 +1,0 @@
-getInstance:0:static
-getAlgorithm:1:abstract
-getLength:2:abstract
-init:3:abstract
-init:4:abstract
-sign:5:abstract
-update:6:abstract
-verify:7:abstract

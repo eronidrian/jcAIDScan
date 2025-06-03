@@ -1,6 +1,0 @@
-clearKey:0:abstract
-getSize:1:abstract
-getType:2:abstract
-isInitialized:3:abstract
-getKey:4:abstract
-setKey:5:abstract
