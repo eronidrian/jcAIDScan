@@ -1,0 +1,14 @@
+clearKey:0:abstract
+getSize:1:abstract
+getType:2:abstract
+isInitialized:3:abstract
+getDP1:4:abstract
+getDQ1:5:abstract
+getP:6:abstract
+getPQ:7:abstract
+getQ:8:abstract
+setDP1:9:abstract
+setDQ1:10:abstract
+setP:11:abstract
+setPQ:12:abstract
+setQ:13:abstract

@@ -1,0 +1,6 @@
+getInstance:0:static
+doFinal:1:abstract
+getAlgorithm:2:abstract
+init:3:abstract
+init:4:abstract
+update:5:abstract

@@ -1,9 +1,58 @@
+import csv
 import os
 import subprocess
 from os import path
+import re
 
 SCRIPT_VERSION = '0.2.1'
 BASE_PATH = '.'
+
+lines = []
+
+jc_version = "310"
+
+
+def add_line(line: list[str]):
+    if line not in lines:
+        lines.append(line)
+
+def parse_signature(signature: str) -> str:
+    match = re.search(r"(\(.*\))", signature)
+    signature = match.group(1)
+
+    signature = re.sub(r'\[B', "byte[];", signature)
+    signature = re.sub(r'\[S', "short[];", signature)
+    signature = re.sub(r'\[Z', "boolean[];", signature)
+    signature = re.sub(r'\[I', "int[];", signature)
+
+    signature = re.sub(f'SS', "short;short;", signature)
+    signature = re.sub(f'BB', "byte;byte;", signature)
+    signature = re.sub(f'II', "int;int;", signature)
+    signature = re.sub(f'([ISBZ;(])I', r'\1int;', signature)
+    signature = re.sub(f'([ISBZ;(])S', r'\1short;', signature)
+    signature = re.sub(r'([ISBZ;(])B', r'\1byte;', signature)
+    signature = re.sub(r'([ISBZ;(])Z', r'\1boolean;', signature)
+
+    signature = re.sub(r'\(L', "(", signature)
+    signature = re.sub(r';L', ";", signature)
+    signature = re.sub("/", ".", signature)
+
+    signature = re.sub(r';\)', ")", signature)
+
+    return signature
+
+
+def export_lines():
+    csv_file = open(f"overview_table_{jc_version}.csv", 'w', newline='')
+    csv_writer = csv.writer(csv_file)
+
+    csv_writer.writerow(["AID", "package name", "class token", "class name", "method token", "method name", "method signature"])
+
+    for i in range(len(lines) - 1):
+        if not set(lines[i]).issubset(set(lines[i + 1])):
+            if len(lines[i]) == 7:
+                lines[i][6] = parse_signature(lines[i][6])
+            csv_writer.writerow(lines[i])
 
 
 def print_info():
@@ -21,8 +70,9 @@ def main():
 
     print_info()
 
-    kit_directory = input('Enter Java Card Kit Directory Name (Please ensure the folder is in current directory: ')
-    java_os = input('Java OS Version(E.g. 2.2.2): ')
+    # kit_directory = input('Enter Java Card Kit Directory Name (Please ensure the folder is in current directory: ')
+    # java_os = input('Java OS Version(E.g. 2.2.2): ')
+    kit_directory = f'jc{jc_version}_kit'
     classdir = "-classdir " + path.join(kit_directory,"api_export_files")
     # exptool = kit_directory+"\\bin\\exp2text"
 
@@ -49,7 +99,7 @@ def main():
 
 
                 # Run exp2text program and create a text file of export files.
-                exp2text = "./exp2text " + classdir + " " + package
+                exp2text = "./exp2text_new " + classdir + " " + package
                 result = subprocess.call(exp2text, stdout=subprocess.PIPE, shell=True)
                 if result != 0:
                     print("Extraction failed")
@@ -71,9 +121,9 @@ def main():
     # and Class related information found in class_info section
     search = ["CONSTANT_Package_info", "class_info", "method_info"]
 
-    f1 = open(path.join(BASE_PATH, java_os + "_package_details.txt"),
-              'w')  # This file stores the information about the packages
-    f1.write("FULL AID:OS VER:AID:PACKAGE NAME\n")
+    # f1 = open(path.join(BASE_PATH, java_os + "_package_details.txt"),
+    #           'w')  # This file stores the information about the packages
+    # f1.write("FULL AID:OS VER:AID:PACKAGE NAME\n")
 
     export_file_index = -1  # This variable is used to keep track of the location in export_files list
 
@@ -124,11 +174,11 @@ def main():
         print(minor_version + major_version + aid_length + aid)
 
         # The package information is stored in file
-        f1.write(full_aid + ":" + java_os + ":" + aid + ":" + package_name[export_file_index] + "\n")
+        # f1.write(full_aid + ":" + java_os + ":" + aid + ":" + package_name[export_file_index] + "\n")
 
         # Now searching for Class Info
         # Create a file in class_files with the name of the full package aid
-        f2 = open(path.join(BASE_PATH, "class_files", full_aid), 'w')
+        # f2 = open(path.join(BASE_PATH, "class_files", full_aid), 'w')
 
         # Search the remaining exp from the previous index value
         # This way each exp file is search from top to bottom only once
@@ -144,37 +194,44 @@ def main():
 
                 # Now extract Token No
                 class_token_no = file_content[index + 1].split("token\t", 1)[1]
-                f2.write(class_name + ":" + class_token_no + "\n")
+                # f2.write(class_name + ":" + class_token_no + "\n")
+
                 index = index + 1
                 method_index = index
                 # Now find the method details from current index no.
-                f3 = open(path.join(BASE_PATH, "method_files", "{0}_{1}.txt".format(full_aid, class_token_no)), 'w')
+                # f3 = open(path.join(BASE_PATH, "method_files", "{0}_{1}.txt".format(full_aid, class_token_no)), 'w')
                 for line_item1 in file_content[method_index:]:
                     if search[1] in line_item1:
-                        f3.close()
+                        # f3.close()
                         break
                     if search[2] in line_item1:  # Method Info structure found
                         method_token_no = file_content[method_index + 1].split("token\t", 1)[1]
-                        if all(["static" not in file_content[method_index + 2],
-                                "abstract" not in file_content[method_index + 2]]):
-                            method_index = method_index + 1
-                            continue
-                        else:
-                            if "static" in file_content[method_index + 2]:
-                                method_type = "static"
-                            else:
-                                method_type = "abstract"
+                        # if all(["static" not in file_content[method_index + 2],
+                        #         "abstract" not in file_content[method_index + 2]]):
+                        #     method_index = method_index + 1
+                        #     continue
+                        # else:
+                        #     if "static" in file_content[method_index + 2]:
+                        #         method_type = "static"
+                        #     else:
+                        #         method_type = "abstract"
                         method_name = file_content[method_index + 3].split("// ", 1)[1]
-                        f3.write(method_name + ":" + method_token_no + ":" + method_type + "\n")
+                        method_signature = file_content[method_index + 4].split("// ", 1)[1]
+                        # f3.write(method_name + ":" + method_token_no + ":" + method_type + "\n")
+                        if method_name != 'equals' and method_name != '<init>':
+                            add_line([aid, package_name[export_file_index], class_token_no, class_name, method_token_no, method_name, method_signature])
                         method_index = method_index + 1
                     else:
+                        add_line([aid, package_name[export_file_index], class_token_no, class_name])
                         method_index = method_index + 1
-                f3.close()
+                # f3.close()
             else:
+                add_line([aid, package_name[export_file_index]])
                 index = index + 1
                 continue
-        f2.close()
-    f1.close()
+        # f2.close()
+    # f1.close()
+    export_lines()
     return
 
 

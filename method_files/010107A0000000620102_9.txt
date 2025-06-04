@@ -1,0 +1,8 @@
+clearKey:0:abstract
+getSize:1:abstract
+getType:2:abstract
+isInitialized:3:abstract
+getExponent:4:abstract
+getModulus:5:abstract
+setExponent:6:abstract
+setModulus:7:abstract

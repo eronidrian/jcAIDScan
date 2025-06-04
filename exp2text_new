@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Copyright � 2003 Sun Microsystems, Inc. All rights reserved.
+# Use is subject to license terms.
+#
+
+JAVA_HOME=${JAVA_HOME:-/usr/j2se}
+
+bin_home=`dirname $0`
+JC_HOME="/home/petr/Downloads/diplomka/sdks_exports/jc310b43_kit"
+
+JC_PATH=$JC_HOME/lib/ant-contrib-1.0b3.jar:$JC_HOME/lib/asm-all-3.1.jar:$JC_HOME/lib/commons-cli-1.0.jar:$JC_HOME/lib/commons-logging-1.1.jar:$JC_HOME/lib/jctasks_tools.jar:$JC_HOME/lib/json.jar:$JC_HOME/lib/tools.jar:$JC_HOME/lib/api_classic-3.1.0.jar:$JC_HOME/lib/api_classic_annotations-3.1.0.jar:$CLASSPATH
+
+JFLAGS="-classpath $JC_PATH"
+/usr/bin/java $JFLAGS com.sun.javacard.converter.Exp2Text "$@"
