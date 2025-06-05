@@ -1,0 +1,1199 @@
+export file {		// javacardx/security/derivation
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	92
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	getAlgorithm
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getSecret
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	()[B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	getSharedInfo
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	getOutputLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	45
+			bytes	javacardx/security/derivation/KDFAnsiX963Spec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	7		// javacardx/security/derivation/KDFAnsiX963Spec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	9		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	javacard/security/AlgorithmParameterSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	11		// javacard/security/AlgorithmParameterSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	()Ljavacard/security/SecretKey;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	getInputDataBeforeCounter
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	getInputDataAfterCounter
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	getCounterLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	48
+			bytes	javacardx/security/derivation/KDFCounterModeSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	17		// javacardx/security/derivation/KDFCounterModeSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	getInputData
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	64
+			bytes	javacardx/security/derivation/KDFDoublePipelineIterationModeSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	20		// javacardx/security/derivation/KDFDoublePipelineIterationModeSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	getIV
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	49
+			bytes	javacardx/security/derivation/KDFFeedbackModeSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	23		// javacardx/security/derivation/KDFFeedbackModeSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getInfo
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getSalt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	41
+			bytes	javacardx/security/derivation/KDFHmacSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	27		// javacardx/security/derivation/KDFHmacSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	getCounter
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	45
+			bytes	javacardx/security/derivation/KDFIcaoMrtdSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	30		// javacardx/security/derivation/KDFIcaoMrtdSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	getParameters
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	45
+			bytes	javacardx/security/derivation/KDFIeee1363Spec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	33		// javacardx/security/derivation/KDFIeee1363Spec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	LABEL_PREFIX_TLS13
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	LABEL_PREFIX_DTLS13
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	getLabelPrefix
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	getLabel
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	getContext
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	51
+			bytes	javacardx/security/derivation/TLSKDFExpandLabelSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	44		// javacardx/security/derivation/TLSKDFExpandLabelSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getSeed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	57
+			bytes	javacardx/security/derivation/TLSPseudoRandomFunctionSpec
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	47		// javacardx/security/derivation/TLSPseudoRandomFunctionSpec
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	ALG_KDF_COUNTER_MODE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	ALG_KDF_DPI_MODE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_KDF_FEEDBACK_MODE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_PRF_TLS11
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_PRF_TLS12
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	ALG_HKDF_EXPAND_LABEL_TLS13
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	10
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_KDF_IEEE_1363
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	6
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_KDF_ICAO_MRTD
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	7
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_KDF_ANSI_X9_63
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_KDF_HKDF
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	9
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getInstance
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	54
+			bytes	(SZ)Ljavacardx/security/derivation/DerivationFunction;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	init
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	45
+			bytes	(Ljavacard/security/AlgorithmParameterSpec;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	nextBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	(Ljavacard/security/SecretKey;)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	lastBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	48
+			bytes	javacardx/security/derivation/DerivationFunction
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	79		// javacardx/security/derivation/DerivationFunction
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	open
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	61
+			bytes	(B)Ljavacardx/security/derivation/DerivationFunction$OneShot;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	close
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	56
+			bytes	javacardx/security/derivation/DerivationFunction$OneShot
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	84		// javacardx/security/derivation/DerivationFunction$OneShot
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	javacardx/security/derivation
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	86		// javacardx/security/derivation
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	88		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	javacard/security
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	90		// javacard/security
+			minor_version	8
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x1:0x2
+		}
+	}
+	this_package	87
+	referenced_package_count	2
+	referencedPackage[0]	89		// java/lang
+	referencedPackage[1]	91		// javacard/security
+	export_class_count	11
+	export_classes {
+		class_info {		// javacardx/security/derivation/KDFAnsiX963Spec
+			token	0
+			access_flags	public abstract interface
+			name_index	8		// javacardx/security/derivation/KDFAnsiX963Spec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getSharedInfo
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFCounterModeSpec
+			token	1
+			access_flags	public abstract interface
+			name_index	18		// javacardx/security/derivation/KDFCounterModeSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	13		// ()Ljavacard/security/SecretKey;
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	14		// getInputDataBeforeCounter
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	15		// getInputDataAfterCounter
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// getCounterLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFDoublePipelineIterationModeSpec
+			token	2
+			access_flags	public abstract interface
+			name_index	21		// javacardx/security/derivation/KDFDoublePipelineIterationModeSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	13		// ()Ljavacard/security/SecretKey;
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	19		// getInputData
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	16		// getCounterLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFFeedbackModeSpec
+			token	3
+			access_flags	public abstract interface
+			name_index	24		// javacardx/security/derivation/KDFFeedbackModeSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	13		// ()Ljavacard/security/SecretKey;
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	19		// getInputData
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	22		// getIV
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// getCounterLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFHmacSpec
+			token	4
+			access_flags	public abstract interface
+			name_index	28		// javacardx/security/derivation/KDFHmacSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	25		// getInfo
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	26		// getSalt
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFIcaoMrtdSpec
+			token	5
+			access_flags	public abstract interface
+			name_index	31		// javacardx/security/derivation/KDFIcaoMrtdSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	29		// getCounter
+					Descriptor_Index	3		// ()[B
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/KDFIeee1363Spec
+			token	6
+			access_flags	public abstract interface
+			name_index	34		// javacardx/security/derivation/KDFIeee1363Spec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	32		// getParameters
+					Descriptor_Index	3		// ()[B
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/TLSKDFExpandLabelSpec
+			token	7
+			access_flags	public abstract interface
+			name_index	45		// javacardx/security/derivation/TLSKDFExpandLabelSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	2
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	35		// LABEL_PREFIX_TLS13
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	38		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	39		// LABEL_PREFIX_DTLS13
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	40		// value = 2
+				}
+				}
+			}
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	1		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	41		// getLabelPrefix
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	42		// getLabel
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	43		// getContext
+					Descriptor_Index	3		// ()[B
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	5		// getOutputLength
+					Descriptor_Index	6		// ()S
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/TLSPseudoRandomFunctionSpec
+			token	8
+			access_flags	public abstract interface
+			name_index	48		// javacardx/security/derivation/TLSPseudoRandomFunctionSpec
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	12		// javacard/security/AlgorithmParameterSpec
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	2
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	2		// getSecret
+					Descriptor_Index	13		// ()Ljavacard/security/SecretKey;
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	46		// getSeed
+					Descriptor_Index	3		// ()[B
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/security/derivation/DerivationFunction
+			token	9
+			access_flags	public abstract
+			name_index	80		// javacardx/security/derivation/DerivationFunction
+			export_supers_count	1
+			supers {
+				constant_pool_index	10		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	10
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	49		// ALG_KDF_COUNTER_MODE
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	38		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	50		// ALG_KDF_DPI_MODE
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	40		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	51		// ALG_KDF_FEEDBACK_MODE
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	52		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	53		// ALG_PRF_TLS11
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	54		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	55		// ALG_PRF_TLS12
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	56		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	57		// ALG_HKDF_EXPAND_LABEL_TLS13
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	58		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	59		// ALG_KDF_IEEE_1363
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	60		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	61		// ALG_KDF_ICAO_MRTD
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	62		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	63		// ALG_KDF_ANSI_X9_63
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	64		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	65		// ALG_KDF_HKDF
+				Descriptor_Index	36		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	37		// ConstantValue
+					attribute_length	2
+					constantvalue_index	66		// value = 9
+				}
+				}
+			}
+			}
+			export_methods_count	9
+			methods {
+				method_info {
+					token	0
+					access_flags	protected
+					name_index	67		// <init>
+					Descriptor_Index	68		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	69		// getInstance
+					Descriptor_Index	70		// (SZ)Ljavacardx/security/derivation/DerivationFunction;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	71		// equals
+					Descriptor_Index	72		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	73		// init
+					Descriptor_Index	74		// (Ljavacard/security/AlgorithmParameterSpec;)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	0		// getAlgorithm
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	75		// nextBytes
+					Descriptor_Index	76		// ([BSS)S
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	75		// nextBytes
+					Descriptor_Index	77		// (Ljavacard/security/SecretKey;)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	78		// lastBytes
+					Descriptor_Index	76		// ([BSS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	78		// lastBytes
+					Descriptor_Index	77		// (Ljavacard/security/SecretKey;)S
+				}
+			}
+			CAP22_inheritable_count	7
+		}
+		class_info {		// javacardx/security/derivation/DerivationFunction$OneShot
+			token	10
+			access_flags	public final
+			name_index	85		// javacardx/security/derivation/DerivationFunction$OneShot
+			export_supers_count	2
+			supers {
+				constant_pool_index	10		// java/lang/Object
+				constant_pool_index	80		// javacardx/security/derivation/DerivationFunction
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	9
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	81		// open
+					Descriptor_Index	82		// (B)Ljavacardx/security/derivation/DerivationFunction$OneShot;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	71		// equals
+					Descriptor_Index	72		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	73		// init
+					Descriptor_Index	74		// (Ljavacard/security/AlgorithmParameterSpec;)V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	0		// getAlgorithm
+					Descriptor_Index	6		// ()S
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	75		// nextBytes
+					Descriptor_Index	76		// ([BSS)S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	75		// nextBytes
+					Descriptor_Index	77		// (Ljavacard/security/SecretKey;)S
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	78		// lastBytes
+					Descriptor_Index	76		// ([BSS)S
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	78		// lastBytes
+					Descriptor_Index	77		// (Ljavacard/security/SecretKey;)S
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	83		// close
+					Descriptor_Index	68		// ()V
+				}
+			}
+			CAP22_inheritable_count	8
+		}
+	}
+}

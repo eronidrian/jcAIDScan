@@ -1,0 +1,194 @@
+export file {		// javacardx/framework/event
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	19
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacardx/framework/event/EventListener
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	0		// javacardx/framework/event/EventListener
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	2		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	javacardx/framework/event/EventSource
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	4		// javacardx/framework/event/EventSource
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	getEventRegistry
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	82
+			bytes	(Ljavacardx/framework/event/EventSource;)Ljavacardx/framework/event/EventRegistry;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	register
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	44
+			bytes	(Ljavacardx/framework/event/EventListener;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	unregister
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacardx/framework/event/EventRegistry
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	13		// javacardx/framework/event/EventRegistry
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	javacardx/framework/event
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	15		// javacardx/framework/event
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	17		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+	}
+	this_package	16
+	referenced_package_count	1
+	referencedPackage[0]	18		// java/lang
+	export_class_count	3
+	export_classes {
+		class_info {		// javacardx/framework/event/EventListener
+			token	0
+			access_flags	public abstract interface
+			name_index	1		// javacardx/framework/event/EventListener
+			export_supers_count	1
+			supers {
+				constant_pool_index	3		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	0
+			methods {
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/framework/event/EventSource
+			token	1
+			access_flags	public abstract interface
+			name_index	5		// javacardx/framework/event/EventSource
+			export_supers_count	1
+			supers {
+				constant_pool_index	3		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	0
+			methods {
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacardx/framework/event/EventRegistry
+			token	2
+			access_flags	public abstract
+			name_index	14		// javacardx/framework/event/EventRegistry
+			export_supers_count	1
+			supers {
+				constant_pool_index	3		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public static
+					name_index	6		// getEventRegistry
+					Descriptor_Index	7		// (Ljavacardx/framework/event/EventSource;)Ljavacardx/framework/event/EventRegistry;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	8		// equals
+					Descriptor_Index	9		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	10		// register
+					Descriptor_Index	11		// (Ljavacardx/framework/event/EventListener;)V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	12		// unregister
+					Descriptor_Index	11		// (Ljavacardx/framework/event/EventListener;)V
+				}
+			}
+			CAP22_inheritable_count	3
+		}
+	}
+}

@@ -1,0 +1,184 @@
+export file {		// java/rmi
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	22
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	java/rmi/Remote
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	0		// java/rmi/Remote
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	2		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	java/rmi/RemoteException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	8		// java/rmi/RemoteException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	10		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	12		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/io/IOException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	14		// java/io/IOException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	java/rmi
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	16		// java/rmi
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	18		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	java/io
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	20		// java/io
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x2
+		}
+	}
+	this_package	17
+	referenced_package_count	2
+	referencedPackage[0]	19		// java/lang
+	referencedPackage[1]	21		// java/io
+	export_class_count	2
+	export_classes {
+		class_info {		// java/rmi/Remote
+			token	0
+			access_flags	public abstract interface remote
+			name_index	1		// java/rmi/Remote
+			export_supers_count	1
+			supers {
+				constant_pool_index	3		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	0
+			methods {
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// java/rmi/RemoteException
+			token	1
+			access_flags	public
+			name_index	9		// java/rmi/RemoteException
+			export_supers_count	4
+			supers {
+				constant_pool_index	3		// java/lang/Object
+				constant_pool_index	11		// java/lang/Throwable
+				constant_pool_index	13		// java/lang/Exception
+				constant_pool_index	15		// java/io/IOException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	2
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	4		// <init>
+					Descriptor_Index	5		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	6		// equals
+					Descriptor_Index	7		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+	}
+}

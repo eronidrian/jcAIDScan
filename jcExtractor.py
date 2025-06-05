@@ -9,7 +9,7 @@ BASE_PATH = '.'
 
 lines = []
 
-jc_version = "310"
+jc_version = "320"
 
 
 def add_line(line: list[str]):
@@ -43,7 +43,7 @@ def parse_signature(signature: str) -> str:
 
 
 def export_lines():
-    csv_file = open(f"overview_table_{jc_version}.csv", 'w', newline='')
+    csv_file = open(f"overview_table_{jc_version}_new.csv", 'w', newline='')
     csv_writer = csv.writer(csv_file)
 
     csv_writer.writerow(["AID", "package name", "class token", "class name", "method token", "method name", "method signature"])

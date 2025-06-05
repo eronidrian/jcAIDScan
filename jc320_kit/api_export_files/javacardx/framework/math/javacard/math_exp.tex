@@ -1,0 +1,458 @@
+export file {		// javacardx/framework/math
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	45
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	getMaxBytesSupported
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	convertToHex
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	([BSS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	convertToBCD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	isBCDFormat
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	javacardx/framework/math/BCDUtil
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	11		// javacardx/framework/math/BCDUtil
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	13		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	FORMAT_BCD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	FORMAT_HEX
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	setMaximum
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	([BSSB)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	init
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	add
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	subtract
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	multiply
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	compareTo
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	(Ljavacardx/framework/math/BigNumber;)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	([BSSB)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	toBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	getByteLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	reset
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	javacardx/framework/math/BigNumber
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	35		// javacardx/framework/math/BigNumber
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	set
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	([BSSZ)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	javacardx/framework/math/ParityBit
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	39		// javacardx/framework/math/ParityBit
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	javacardx/framework/math
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	41		// javacardx/framework/math
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	43		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+	}
+	this_package	42
+	referenced_package_count	1
+	referencedPackage[0]	44		// java/lang
+	export_class_count	3
+	export_classes {
+		class_info {		// javacardx/framework/math/BCDUtil
+			token	0
+			access_flags	public final
+			name_index	12		// javacardx/framework/math/BCDUtil
+			export_supers_count	1
+			supers {
+				constant_pool_index	14		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	2		// getMaxBytesSupported
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	4		// convertToHex
+					Descriptor_Index	5		// ([BSS[BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	6		// convertToBCD
+					Descriptor_Index	5		// ([BSS[BS)S
+				}
+				method_info {
+					token	4
+					access_flags	public static
+					name_index	7		// isBCDFormat
+					Descriptor_Index	8		// ([BSS)Z
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	9		// equals
+					Descriptor_Index	10		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+		class_info {		// javacardx/framework/math/BigNumber
+			token	1
+			access_flags	public final
+			name_index	36		// javacardx/framework/math/BigNumber
+			export_supers_count	1
+			supers {
+				constant_pool_index	14		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	2
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	15		// FORMAT_BCD
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	18		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	19		// FORMAT_HEX
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	20		// value = 2
+				}
+				}
+			}
+			}
+			export_methods_count	13
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	21		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	2		// getMaxBytesSupported
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	9		// equals
+					Descriptor_Index	10		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	22		// setMaximum
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	24		// init
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	25		// add
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	26		// subtract
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	27		// multiply
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	28		// compareTo
+					Descriptor_Index	29		// (Ljavacardx/framework/math/BigNumber;)B
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	28		// compareTo
+					Descriptor_Index	30		// ([BSSB)B
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	31		// toBytes
+					Descriptor_Index	23		// ([BSSB)V
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	32		// getByteLength
+					Descriptor_Index	33		// (B)S
+				}
+				method_info {
+					token	10
+					access_flags	public
+					name_index	34		// reset
+					Descriptor_Index	1		// ()V
+				}
+			}
+			CAP22_inheritable_count	11
+		}
+		class_info {		// javacardx/framework/math/ParityBit
+			token	2
+			access_flags	public final
+			name_index	40		// javacardx/framework/math/ParityBit
+			export_supers_count	1
+			supers {
+				constant_pool_index	14		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	37		// set
+					Descriptor_Index	38		// ([BSSZ)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	9		// equals
+					Descriptor_Index	10		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+	}
+}

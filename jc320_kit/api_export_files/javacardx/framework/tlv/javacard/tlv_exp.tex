@@ -1,0 +1,1449 @@
+export file {		// javacardx/framework/tlv
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	115
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getInstance
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	38
+			bytes	([BSS)Ljavacardx/framework/tlv/BERTLV;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	verifyFormat
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getTag
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	([BS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	toBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	()Ljavacardx/framework/tlv/BERTag;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	size
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	init
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacardx/framework/tlv/BERTLV
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	18		// javacardx/framework/tlv/BERTLV
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	20		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	BER_TAG_CLASS_MASK_UNIVERSAL
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	0
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	BER_TAG_CLASS_MASK_APPLICATION
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	BER_TAG_CLASS_MASK_CONTEXT_SPECIFIC
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	BER_TAG_CLASS_MASK_PRIVATE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	BER_TAG_TYPE_CONSTRUCTED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	BER_TAG_TYPE_PRIMITIVE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	([BS)Ljavacardx/framework/tlv/BERTag;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	(SZS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	tagNumber
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	isConstructed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	tagClass
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	(Ljavacardx/framework/tlv/BERTag;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacardx/framework/tlv/BERTag
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	46		// javacardx/framework/tlv/BERTag
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	append
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	find
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	findNext
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	([BSS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	78
+			bytes	(Ljavacardx/framework/tlv/ConstructedBERTag;Ljavacardx/framework/tlv/BERTLV;)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	50
+			bytes	(Ljavacardx/framework/tlv/ConstructedBERTag;[BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	(Ljavacardx/framework/tlv/BERTLV;)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	delete
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	36
+			bytes	(Ljavacardx/framework/tlv/BERTLV;S)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	66
+			bytes	(Ljavacardx/framework/tlv/BERTag;)Ljavacardx/framework/tlv/BERTLV;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	99
+			bytes	(Ljavacardx/framework/tlv/BERTag;Ljavacardx/framework/tlv/BERTLV;S)Ljavacardx/framework/tlv/BERTLV;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	41
+			bytes	javacardx/framework/tlv/ConstructedBERTLV
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	60		// javacardx/framework/tlv/ConstructedBERTLV
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	(BS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	41
+			bytes	javacardx/framework/tlv/ConstructedBERTag
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	63		// javacardx/framework/tlv/ConstructedBERTag
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	getValueOffset
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	([BS[BSS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	appendValue
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	([BS[BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	48
+			bytes	(Ljavacardx/framework/tlv/PrimitiveBERTag;[BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	replaceValue
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	getValue
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacardx/framework/tlv/PrimitiveBERTLV
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	72		// javacardx/framework/tlv/PrimitiveBERTLV
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacardx/framework/tlv/PrimitiveBERTag
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	74		// javacardx/framework/tlv/PrimitiveBERTag
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	INVALID_PARAM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ILLEGAL_SIZE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	EMPTY_TAG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	EMPTY_TLV
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	MALFORMED_TAG
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	MALFORMED_TLV
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	6
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	INSUFFICIENT_STORAGE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	7
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	TAG_SIZE_GREATER_THAN_127
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	TAG_NUMBER_GREATER_THAN_32767
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	9
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	TLV_SIZE_GREATER_THAN_32767
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	10
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	TLV_LENGTH_GREATER_THAN_32767
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	11
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	throwIt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	setReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	36
+			bytes	javacardx/framework/tlv/TLVException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	99		// javacardx/framework/tlv/TLVException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	101		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	103		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	java/lang/RuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	105		// java/lang/RuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/CardRuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	107		// javacard/framework/CardRuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	javacardx/framework/tlv
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	109		// javacardx/framework/tlv
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	111		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	javacard/framework
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	113		// javacard/framework
+			minor_version	9
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x1:0x1
+		}
+	}
+	this_package	110
+	referenced_package_count	2
+	referencedPackage[0]	112		// java/lang
+	referencedPackage[1]	114		// javacard/framework
+	export_class_count	7
+	export_classes {
+		class_info {		// javacardx/framework/tlv/BERTLV
+			token	0
+			access_flags	public abstract
+			name_index	19		// javacardx/framework/tlv/BERTLV
+			export_supers_count	1
+			supers {
+				constant_pool_index	21		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	11
+			methods {
+				method_info {
+					token	0
+					access_flags	protected
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	2		// getInstance
+					Descriptor_Index	3		// ([BSS)Ljavacardx/framework/tlv/BERTLV;
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	4		// verifyFormat
+					Descriptor_Index	5		// ([BSS)Z
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	6		// getTag
+					Descriptor_Index	7		// ([BS[BS)S
+				}
+				method_info {
+					token	4
+					access_flags	public static
+					name_index	8		// getLength
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	6		// getTag
+					Descriptor_Index	13		// ()Ljavacardx/framework/tlv/BERTag;
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	8		// getLength
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// init
+					Descriptor_Index	17		// ([BSS)S
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacardx/framework/tlv/BERTag
+			token	1
+			access_flags	public abstract
+			name_index	47		// javacardx/framework/tlv/BERTag
+			export_supers_count	1
+			supers {
+				constant_pool_index	21		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	6
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	22		// BER_TAG_CLASS_MASK_UNIVERSAL
+				Descriptor_Index	23		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	25		// value = 0
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	26		// BER_TAG_CLASS_MASK_APPLICATION
+				Descriptor_Index	23		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	27		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	28		// BER_TAG_CLASS_MASK_CONTEXT_SPECIFIC
+				Descriptor_Index	23		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	29		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	30		// BER_TAG_CLASS_MASK_PRIVATE
+				Descriptor_Index	23		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	31		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	32		// BER_TAG_TYPE_CONSTRUCTED
+				Descriptor_Index	33		// Z
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	27		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	34		// BER_TAG_TYPE_PRIMITIVE
+				Descriptor_Index	33		// Z
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	25		// value = 0
+				}
+				}
+			}
+			}
+			export_methods_count	16
+			methods {
+				method_info {
+					token	0
+					access_flags	protected
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	2		// getInstance
+					Descriptor_Index	35		// ([BS)Ljavacardx/framework/tlv/BERTag;
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	12		// toBytes
+					Descriptor_Index	36		// (SZS[BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	15		// size
+					Descriptor_Index	37		// ([BS)B
+				}
+				method_info {
+					token	4
+					access_flags	public static
+					name_index	38		// tagNumber
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public static
+					name_index	39		// isConstructed
+					Descriptor_Index	40		// ([BS)Z
+				}
+				method_info {
+					token	6
+					access_flags	public static
+					name_index	41		// tagClass
+					Descriptor_Index	37		// ([BS)B
+				}
+				method_info {
+					token	7
+					access_flags	public static
+					name_index	4		// verifyFormat
+					Descriptor_Index	40		// ([BS)Z
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	38		// tagNumber
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	39		// isConstructed
+					Descriptor_Index	43		// ()Z
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	41		// tagClass
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	44		// (Ljavacardx/framework/tlv/BERTag;)Z
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	16		// init
+					Descriptor_Index	45		// ([BS)V
+				}
+			}
+			CAP22_inheritable_count	8
+		}
+		class_info {		// javacardx/framework/tlv/ConstructedBERTLV
+			token	2
+			access_flags	public final
+			name_index	61		// javacardx/framework/tlv/ConstructedBERTLV
+			export_supers_count	2
+			supers {
+				constant_pool_index	21		// java/lang/Object
+				constant_pool_index	19		// javacardx/framework/tlv/BERTLV
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	16
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	48		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	49		// append
+					Descriptor_Index	7		// ([BS[BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	50		// find
+					Descriptor_Index	7		// ([BS[BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	51		// findNext
+					Descriptor_Index	52		// ([BSS[BS)S
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	6		// getTag
+					Descriptor_Index	13		// ()Ljavacardx/framework/tlv/BERTag;
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	8		// getLength
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	17		// ([BSS)S
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	53		// (Ljavacardx/framework/tlv/ConstructedBERTag;Ljavacardx/framework/tlv/BERTLV;)S
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	54		// (Ljavacardx/framework/tlv/ConstructedBERTag;[BSS)S
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	49		// append
+					Descriptor_Index	55		// (Ljavacardx/framework/tlv/BERTLV;)S
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	56		// delete
+					Descriptor_Index	57		// (Ljavacardx/framework/tlv/BERTLV;S)S
+				}
+				method_info {
+					token	10
+					access_flags	public
+					name_index	50		// find
+					Descriptor_Index	58		// (Ljavacardx/framework/tlv/BERTag;)Ljavacardx/framework/tlv/BERTLV;
+				}
+				method_info {
+					token	11
+					access_flags	public
+					name_index	51		// findNext
+					Descriptor_Index	59		// (Ljavacardx/framework/tlv/BERTag;Ljavacardx/framework/tlv/BERTLV;S)Ljavacardx/framework/tlv/BERTLV;
+				}
+			}
+			CAP22_inheritable_count	12
+		}
+		class_info {		// javacardx/framework/tlv/ConstructedBERTag
+			token	3
+			access_flags	public final
+			name_index	64		// javacardx/framework/tlv/ConstructedBERTag
+			export_supers_count	2
+			supers {
+				constant_pool_index	21		// java/lang/Object
+				constant_pool_index	47		// javacardx/framework/tlv/BERTag
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	10
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	38		// tagNumber
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	39		// isConstructed
+					Descriptor_Index	43		// ()Z
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	41		// tagClass
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	44		// (Ljavacardx/framework/tlv/BERTag;)Z
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	45		// ([BS)V
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	62		// (BS)V
+				}
+			}
+			CAP22_inheritable_count	9
+		}
+		class_info {		// javacardx/framework/tlv/PrimitiveBERTLV
+			token	4
+			access_flags	public
+			name_index	73		// javacardx/framework/tlv/PrimitiveBERTLV
+			export_supers_count	2
+			supers {
+				constant_pool_index	21		// java/lang/Object
+				constant_pool_index	19		// javacardx/framework/tlv/BERTLV
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	14
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	48		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	65		// getValueOffset
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	12		// toBytes
+					Descriptor_Index	66		// ([BS[BSS[BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	67		// appendValue
+					Descriptor_Index	68		// ([BS[BSS)S
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	6		// getTag
+					Descriptor_Index	13		// ()Ljavacardx/framework/tlv/BERTag;
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	8		// getLength
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	17		// ([BSS)S
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	69		// (Ljavacardx/framework/tlv/PrimitiveBERTag;[BSS)S
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	67		// appendValue
+					Descriptor_Index	17		// ([BSS)S
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	70		// replaceValue
+					Descriptor_Index	17		// ([BSS)S
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	71		// getValue
+					Descriptor_Index	9		// ([BS)S
+				}
+			}
+			CAP22_inheritable_count	10
+		}
+		class_info {		// javacardx/framework/tlv/PrimitiveBERTag
+			token	5
+			access_flags	public final
+			name_index	75		// javacardx/framework/tlv/PrimitiveBERTag
+			export_supers_count	2
+			supers {
+				constant_pool_index	21		// java/lang/Object
+				constant_pool_index	47		// javacardx/framework/tlv/BERTag
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	10
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	15		// size
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	12		// toBytes
+					Descriptor_Index	9		// ([BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	38		// tagNumber
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	39		// isConstructed
+					Descriptor_Index	43		// ()Z
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	41		// tagClass
+					Descriptor_Index	42		// ()B
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	44		// (Ljavacardx/framework/tlv/BERTag;)Z
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	45		// ([BS)V
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	16		// init
+					Descriptor_Index	62		// (BS)V
+				}
+			}
+			CAP22_inheritable_count	9
+		}
+		class_info {		// javacardx/framework/tlv/TLVException
+			token	6
+			access_flags	public
+			name_index	100		// javacardx/framework/tlv/TLVException
+			export_supers_count	5
+			supers {
+				constant_pool_index	21		// java/lang/Object
+				constant_pool_index	102		// java/lang/Throwable
+				constant_pool_index	104		// java/lang/Exception
+				constant_pool_index	106		// java/lang/RuntimeException
+				constant_pool_index	108		// javacard/framework/CardRuntimeException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	11
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	76		// INVALID_PARAM
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	27		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	78		// ILLEGAL_SIZE
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	29		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	79		// EMPTY_TAG
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	31		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	80		// EMPTY_TLV
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	81		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	82		// MALFORMED_TAG
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	83		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	84		// MALFORMED_TLV
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	85		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	86		// INSUFFICIENT_STORAGE
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	87		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	88		// TAG_SIZE_GREATER_THAN_127
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	89		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	90		// TAG_NUMBER_GREATER_THAN_32767
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	91		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	92		// TLV_SIZE_GREATER_THAN_32767
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	93		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	94		// TLV_LENGTH_GREATER_THAN_32767
+				Descriptor_Index	77		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	24		// ConstantValue
+					attribute_length	2
+					constantvalue_index	95		// value = 11
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	0		// <init>
+					Descriptor_Index	48		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	96		// throwIt
+					Descriptor_Index	48		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	10		// equals
+					Descriptor_Index	11		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	97		// getReason
+					Descriptor_Index	14		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	98		// setReason
+					Descriptor_Index	48		// (S)V
+				}
+			}
+			CAP22_inheritable_count	3
+		}
+	}
+}

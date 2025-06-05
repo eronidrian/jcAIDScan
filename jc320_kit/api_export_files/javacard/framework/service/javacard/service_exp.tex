@@ -1,0 +1,1435 @@
+export file {		// javacard/framework/service
+	magic	00FACADE		 // in hex
+	minor_version	3
+	major_version	2
+	constant_pool_count	118
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	processDataIn
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/framework/APDU;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	processCommand
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	processDataOut
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	javacard/framework/service/Service
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	4		// javacard/framework/service/Service
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	6		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	PROPERTY_INPUT_CONFIDENTIALITY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	PROPERTY_INPUT_INTEGRITY
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	PROPERTY_OUTPUT_CONFIDENTIALITY
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	PROPERTY_OUTPUT_INTEGRITY
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	PRINCIPAL_CARDHOLDER
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	PRINCIPAL_CARD_ISSUER
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	PRINCIPAL_APP_PROVIDER
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	isAuthenticated
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	isChannelSecure
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	isCommandSecure
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	javacard/framework/service/SecurityService
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	28		// javacard/framework/service/SecurityService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	javacard/framework/service/RemoteService
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	30		// javacard/framework/service/RemoteService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	receiveInData
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/framework/APDU;)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	setProcessed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/framework/APDU;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	isProcessed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	setOutputLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	(Ljavacard/framework/APDU;S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	getOutputLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	setStatusWord
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	getStatusWord
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	fail
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	(Ljavacard/framework/APDU;S)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	succeed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	succeedWithStatusWord
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getCLA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/framework/APDU;)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getINS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	getP1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	getP2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	selectingApplet
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/service/BasicService
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	57		// javacard/framework/service/BasicService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	DEFAULT_RMI_INVOKE_INSTRUCTION
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	56
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	(Ljava/rmi/Remote;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	setInvokeInstructionByte
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	javacard/framework/service/RMIService
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	64		// javacard/framework/service/RMIService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	export
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	unexport
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	43
+			bytes	javacard/framework/service/CardRemoteObject
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	68		// javacard/framework/service/CardRemoteObject
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	java/rmi/Remote
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	70		// java/rmi/Remote
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	PROCESS_NONE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	0
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	PROCESS_INPUT_DATA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	PROCESS_COMMAND
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	PROCESS_OUTPUT_DATA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	addService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	(Ljavacard/framework/service/Service;B)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	removeService
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	dispatch
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	49
+			bytes	(Ljavacard/framework/APDU;B)Ljava/lang/Exception;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	process
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	javacard/framework/service/Dispatcher
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	84		// javacard/framework/service/Dispatcher
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ILLEGAL_PARAM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	DISPATCH_TABLE_FULL
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	COMMAND_DATA_TOO_LONG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	CANNOT_ACCESS_IN_COMMAND
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	CANNOT_ACCESS_OUT_COMMAND
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	COMMAND_IS_FINISHED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	6
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	REMOTE_OBJECT_NOT_EXPORTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	7
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	throwIt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	setReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	43
+			bytes	javacard/framework/service/ServiceException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	100		// javacard/framework/service/ServiceException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	102		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	104		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	java/lang/RuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	106		// java/lang/RuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/CardRuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	108		// javacard/framework/CardRuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	javacard/framework/service
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	110		// javacard/framework/service
+			minor_version	0
+			major_version	1
+			aid_length	8
+			aid	0xD:0xE:0xA:0xD:0xB:0xE:0xE:0xF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	java/lang
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	112		// java/lang
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	javacard/framework
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	114		// javacard/framework
+			minor_version	9
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x1:0x1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	java/rmi
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	0
+			name_index	116		// java/rmi
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x0:0x3
+		}
+	}
+	this_package	111
+	referenced_package_count	3
+	referencedPackage[0]	113		// java/lang
+	referencedPackage[1]	115		// javacard/framework
+	referencedPackage[2]	117		// java/rmi
+	export_class_count	8
+	export_classes {
+		class_info {		// javacard/framework/service/Service
+			token	0
+			access_flags	public abstract interface
+			name_index	5		// javacard/framework/service/Service
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// processDataIn
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// processCommand
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	3		// processDataOut
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacard/framework/service/SecurityService
+			token	1
+			access_flags	public abstract interface
+			name_index	29		// javacard/framework/service/SecurityService
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	5		// javacard/framework/service/Service
+			}
+			export_fields_count	7
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	8		// PROPERTY_INPUT_CONFIDENTIALITY
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	11		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	12		// PROPERTY_INPUT_INTEGRITY
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	13		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	14		// PROPERTY_OUTPUT_CONFIDENTIALITY
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	15		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	16		// PROPERTY_OUTPUT_INTEGRITY
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	17		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	18		// PRINCIPAL_CARDHOLDER
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	11		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	20		// PRINCIPAL_CARD_ISSUER
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	13		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	21		// PRINCIPAL_APP_PROVIDER
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	22		// value = 3
+				}
+				}
+			}
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// processDataIn
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// processCommand
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	3		// processDataOut
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	23		// isAuthenticated
+					Descriptor_Index	24		// (S)Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	25		// isChannelSecure
+					Descriptor_Index	26		// (B)Z
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	27		// isCommandSecure
+					Descriptor_Index	26		// (B)Z
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacard/framework/service/RemoteService
+			token	2
+			access_flags	public abstract interface
+			name_index	31		// javacard/framework/service/RemoteService
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	5		// javacard/framework/service/Service
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// processDataIn
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// processCommand
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	3		// processDataOut
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+			}
+			CAP22_inheritable_count	0
+		}
+		class_info {		// javacard/framework/service/BasicService
+			token	3
+			access_flags	public
+			name_index	58		// javacard/framework/service/BasicService
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	5		// javacard/framework/service/Service
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	20
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	32		// <init>
+					Descriptor_Index	33		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	34		// equals
+					Descriptor_Index	35		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	0		// processDataIn
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	2		// processCommand
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	3		// processDataOut
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	36		// receiveInData
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	38		// setProcessed
+					Descriptor_Index	39		// (Ljavacard/framework/APDU;)V
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	40		// isProcessed
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	41		// setOutputLength
+					Descriptor_Index	42		// (Ljavacard/framework/APDU;S)V
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	43		// getOutputLength
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	44		// setStatusWord
+					Descriptor_Index	42		// (Ljavacard/framework/APDU;S)V
+				}
+				method_info {
+					token	10
+					access_flags	public
+					name_index	45		// getStatusWord
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	11
+					access_flags	public
+					name_index	46		// fail
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	12
+					access_flags	public
+					name_index	48		// succeed
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	13
+					access_flags	public
+					name_index	49		// succeedWithStatusWord
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	14
+					access_flags	public
+					name_index	50		// getCLA
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	15
+					access_flags	public
+					name_index	52		// getINS
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	16
+					access_flags	public
+					name_index	53		// getP1
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	17
+					access_flags	public
+					name_index	54		// getP2
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	18
+					access_flags	public
+					name_index	55		// selectingApplet
+					Descriptor_Index	56		// ()Z
+				}
+			}
+			CAP22_inheritable_count	19
+		}
+		class_info {		// javacard/framework/service/RMIService
+			token	4
+			access_flags	public
+			name_index	65		// javacard/framework/service/RMIService
+			export_supers_count	2
+			supers {
+				constant_pool_index	7		// java/lang/Object
+				constant_pool_index	58		// javacard/framework/service/BasicService
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	5		// javacard/framework/service/Service
+				constant_pool_index	31		// javacard/framework/service/RemoteService
+			}
+			export_fields_count	1
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	59		// DEFAULT_RMI_INVOKE_INSTRUCTION
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	60		// value = 56
+				}
+				}
+			}
+			}
+			export_methods_count	21
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	32		// <init>
+					Descriptor_Index	61		// (Ljava/rmi/Remote;)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	34		// equals
+					Descriptor_Index	35		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	0		// processDataIn
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	2		// processCommand
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	3		// processDataOut
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	36		// receiveInData
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	38		// setProcessed
+					Descriptor_Index	39		// (Ljavacard/framework/APDU;)V
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	40		// isProcessed
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	41		// setOutputLength
+					Descriptor_Index	42		// (Ljavacard/framework/APDU;S)V
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	43		// getOutputLength
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	44		// setStatusWord
+					Descriptor_Index	42		// (Ljavacard/framework/APDU;S)V
+				}
+				method_info {
+					token	10
+					access_flags	public
+					name_index	45		// getStatusWord
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;)S
+				}
+				method_info {
+					token	11
+					access_flags	public
+					name_index	46		// fail
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	12
+					access_flags	public
+					name_index	48		// succeed
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)Z
+				}
+				method_info {
+					token	13
+					access_flags	public
+					name_index	49		// succeedWithStatusWord
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	14
+					access_flags	public
+					name_index	50		// getCLA
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	15
+					access_flags	public
+					name_index	52		// getINS
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	16
+					access_flags	public
+					name_index	53		// getP1
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	17
+					access_flags	public
+					name_index	54		// getP2
+					Descriptor_Index	51		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	18
+					access_flags	public
+					name_index	55		// selectingApplet
+					Descriptor_Index	56		// ()Z
+				}
+				method_info {
+					token	19
+					access_flags	public
+					name_index	62		// setInvokeInstructionByte
+					Descriptor_Index	63		// (B)V
+				}
+			}
+			CAP22_inheritable_count	20
+		}
+		class_info {		// javacard/framework/service/CardRemoteObject
+			token	5
+			access_flags	public remote
+			name_index	69		// javacard/framework/service/CardRemoteObject
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	71		// java/rmi/Remote
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	32		// <init>
+					Descriptor_Index	33		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	66		// export
+					Descriptor_Index	61		// (Ljava/rmi/Remote;)V
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	67		// unexport
+					Descriptor_Index	61		// (Ljava/rmi/Remote;)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	34		// equals
+					Descriptor_Index	35		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+		class_info {		// javacard/framework/service/Dispatcher
+			token	6
+			access_flags	public
+			name_index	85		// javacard/framework/service/Dispatcher
+			export_supers_count	1
+			supers {
+				constant_pool_index	7		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	4
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	72		// PROCESS_NONE
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	73		// value = 0
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	74		// PROCESS_INPUT_DATA
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	11		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	75		// PROCESS_COMMAND
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	13		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	76		// PROCESS_OUTPUT_DATA
+				Descriptor_Index	9		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	22		// value = 3
+				}
+				}
+			}
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	32		// <init>
+					Descriptor_Index	77		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	34		// equals
+					Descriptor_Index	35		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	78		// addService
+					Descriptor_Index	79		// (Ljavacard/framework/service/Service;B)V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	80		// removeService
+					Descriptor_Index	79		// (Ljavacard/framework/service/Service;B)V
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	81		// dispatch
+					Descriptor_Index	82		// (Ljavacard/framework/APDU;B)Ljava/lang/Exception;
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	83		// process
+					Descriptor_Index	39		// (Ljavacard/framework/APDU;)V
+				}
+			}
+			CAP22_inheritable_count	5
+		}
+		class_info {		// javacard/framework/service/ServiceException
+			token	7
+			access_flags	public
+			name_index	101		// javacard/framework/service/ServiceException
+			export_supers_count	5
+			supers {
+				constant_pool_index	7		// java/lang/Object
+				constant_pool_index	103		// java/lang/Throwable
+				constant_pool_index	105		// java/lang/Exception
+				constant_pool_index	107		// java/lang/RuntimeException
+				constant_pool_index	109		// javacard/framework/CardRuntimeException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	7
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	86		// ILLEGAL_PARAM
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	11		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	87		// DISPATCH_TABLE_FULL
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	13		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	88		// COMMAND_DATA_TOO_LONG
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	22		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	89		// CANNOT_ACCESS_IN_COMMAND
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	15		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	90		// CANNOT_ACCESS_OUT_COMMAND
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	91		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	92		// COMMAND_IS_FINISHED
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	93		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	94		// REMOTE_OBJECT_NOT_EXPORTED
+				Descriptor_Index	19		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	95		// value = 7
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	32		// <init>
+					Descriptor_Index	77		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	96		// throwIt
+					Descriptor_Index	77		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	34		// equals
+					Descriptor_Index	35		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	97		// getReason
+					Descriptor_Index	98		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	99		// setReason
+					Descriptor_Index	77		// (S)V
+				}
+			}
+			CAP22_inheritable_count	3
+		}
+	}
+}
