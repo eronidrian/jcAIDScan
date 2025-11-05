@@ -46,12 +46,12 @@ def export_lines():
     csv_file = open(f"overview_table_{jc_version}_new.csv", 'w', newline='')
     csv_writer = csv.writer(csv_file)
 
-    csv_writer.writerow(["AID", "package name", "class token", "class name", "method token", "method name", "method signature"])
+    csv_writer.writerow(["AID", "package name", "class token", "class name", "method type", "method token", "method name", "method signature"])
 
     for i in range(len(lines) - 1):
         if not set(lines[i]).issubset(set(lines[i + 1])):
-            if len(lines[i]) == 7:
-                lines[i][6] = parse_signature(lines[i][6])
+            if len(lines[i]) == 8:
+                lines[i][7] = parse_signature(lines[i][7])
             csv_writer.writerow(lines[i])
 
 
@@ -99,7 +99,7 @@ def main():
 
 
                 # Run exp2text program and create a text file of export files.
-                exp2text = "./exp2text_new " + classdir + " " + package
+                exp2text = "/home/petr/Downloads/diplomka/sdks_export_files/jc310b43_kit/bin/exp2text.sh " + classdir + " " + package
                 result = subprocess.call(exp2text, stdout=subprocess.PIPE, shell=True)
                 if result != 0:
                     print("Extraction failed")
@@ -206,20 +206,15 @@ def main():
                         break
                     if search[2] in line_item1:  # Method Info structure found
                         method_token_no = file_content[method_index + 1].split("token\t", 1)[1]
-                        # if all(["static" not in file_content[method_index + 2],
-                        #         "abstract" not in file_content[method_index + 2]]):
-                        #     method_index = method_index + 1
-                        #     continue
-                        # else:
-                        #     if "static" in file_content[method_index + 2]:
-                        #         method_type = "static"
-                        #     else:
-                        #         method_type = "abstract"
+                        if "static" in file_content[method_index + 2]:
+                            method_type = "static"
+                        else:
+                            method_type = "virtual"
                         method_name = file_content[method_index + 3].split("// ", 1)[1]
                         method_signature = file_content[method_index + 4].split("// ", 1)[1]
                         # f3.write(method_name + ":" + method_token_no + ":" + method_type + "\n")
                         if method_name != 'equals' and method_name != '<init>':
-                            add_line([aid, package_name[export_file_index], class_token_no, class_name, method_token_no, method_name, method_signature])
+                            add_line([aid, package_name[export_file_index], class_token_no, class_name, method_type, method_token_no, method_name, method_signature])
                         method_index = method_index + 1
                     else:
                         add_line([aid, package_name[export_file_index], class_token_no, class_name])
