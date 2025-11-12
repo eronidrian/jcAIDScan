@@ -304,100 +304,94 @@ class AIDScanner:
 
         return import_section
 
+    def extract_details_from_class_files(self, package) -> list:
+        file_name = path.join(self.base_path, 'class_files', '{0}.txt'.format(package.serialize()))
+        if not os.path.exists(file_name):
+            print("No Class File found for checking\n")
+            return []
+
+        class_detail = []
+        with open(file_name, 'r') as f:
+            class_check = f.read().splitlines()
+        if len(class_check) > 0:
+            # Entries present in class file
+            class_file_entry_present = True
+            for class_item in class_check:
+                # check installation for each class token no
+                # Firstly check whether the Class is already checked or not.
+                class_name, class_token = class_item.split(':')
+                class_detail.append([class_name, class_token])
+                # print(class_detail[-1])
+
+        return class_detail
+
+    def find_class_in_classes_supported_list(self, classes_supported_list, package, class_token) -> tuple[str | None, int]:
+        support_index = -1
+        # Search in Classes_supported_list
+        for item_entry in classes_supported_list:
+            support_index = support_index + 1
+            package_name_found, class_name_found, class_token_found, support = item_entry.split(';')
+            if package_name_found == package.get_well_known_name() and class_token_found == str(class_token):
+                return class_name_found, support_index
+
+        return None, support_index
+
+
+
     # This function attempts to detect the classes between range 00-FF for supported packages
     def check_classes_range(self, import_section, package, uninstall, classes_supported_list, class_range):
+        with open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'Import.cap'), 'wb') as f:
+            f.write(bytes.fromhex(import_section))
 
-        class_file_entry_present = False
+        class_detail = self.extract_details_from_class_files(package)
 
-        f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'Import.cap'), 'wb')
-        f.write(bytes.fromhex(import_section))
-        f.close()
-
-        file_name = path.join(self.base_path, 'class_files', '{0}.txt'.format(package.serialize()))
-        if os.path.exists(file_name):
-            f = open(file_name, 'r')
-            class_check = f.read().splitlines()
-            f.close()
-            if len(class_check) > 0:
-                class_detail = []
-                # Entries present in class file
-                class_file_entry_present = True
-                for class_item in class_check:
-                    # check installation for each class token no
-                    # Firstly check whether the Class is already checked or not.
-                    class_item1, class_item2 = class_item.split(':')
-                    class_detail.append([class_item1, class_item2])
-                    # print(class_detail[-1])
-        else:
-            print("No Class File found for checking\n")
-
-        f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'rb')
-        hexdata = f.read().hex().upper()
-        f.close()
-        hex_array = bytearray(bytes.fromhex(hexdata))
+        with open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'rb') as f:
+            constant_pool_content = f.read().hex().upper()
+        constant_pool_content = bytearray(bytes.fromhex(constant_pool_content))
 
         for min_class_range, max_class_range in class_range:
-            for value in range(min_class_range, max_class_range + 1):
-                class_token = value
-                class_name = "Unknown"
-                support_index = -1
+            for checked_class_token in range(min_class_range, max_class_range + 1):
+                checked_class_name = "Unknown"
                 support_found = False
 
-                # Search in Classes_supported_list
-                if len(classes_supported_list) > 0:
-                    for item_entry in classes_supported_list:
-                        support_index = support_index + 1
-                        pack_name, cl_name, cl_token, support = item_entry.split(';')
-                        if all([pack_name == package.get_well_known_name(), cl_token == str(value)]):
-                            class_name = cl_name
-                            support_found = True
-                            break
+                found_class_name, support_index = self.find_class_in_classes_supported_list(classes_supported_list, package, checked_class_token)
+                checked_class_name = found_class_name if found_class_name is not None else checked_class_name
 
-                if all([support_found, not class_file_entry_present]):
+                if support_found and not class_detail:
                     continue
 
-                if all([support_found, class_name != 'Unknown']):
+                if support_found and checked_class_name != 'Unknown':
                     continue
 
                 found_in_class_file = False
-                if class_file_entry_present:
+                if class_detail:
                     # Search the token in class_check list
-                    for item1, item2 in class_detail:
-                        if str(value) == item2:
-                            class_name = item1
+                    for class_name, class_token in class_detail:
+                        if str(checked_class_token) == class_token:
+                            checked_class_name = class_name
                             found_in_class_file = True
                             break
 
-                if all([support_found, found_in_class_file]):
+                if support_found and found_in_class_file:
                     class_full_name = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', '{3}']).format(
-                        package.get_well_known_name(), class_name,
-                        class_token, classes_supported_list[support_index].split(';')[3])
+                        package.get_well_known_name(), checked_class_name,
+                        checked_class_token, classes_supported_list[support_index].split(';')[3])
                     classes_supported_list[support_index] = class_full_name
                     continue
 
-                if all([support_found, not found_in_class_file]):
+                if support_found and not found_in_class_file:
                     continue
 
-                print("Checking for {0}; \t Class Token {1:02X}\n".format(package.serialize(), int(class_token)))
-                hex_array[43] = int(class_token)
-                f = open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'wb')
-                f.write(hex_array)
-                f.close()
-                uninstall = self.check_classtoken(package, uninstall, class_token)
-                if uninstall:
-                    print("***Class Name {0}.{1} is Supported \n".format(package.get_well_known_name(),
-                                                                         class_name))
-                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'yes']).format(
-                        package.get_well_known_name(),
-                        class_name, class_token)
-                    classes_supported_list.append(class_entry)
-                else:
-                    print("***Class Name {0}.{1} is Not Supported \n".format(package.get_well_known_name(),
-                                                                             class_name))
-                    class_entry = ''.join(['{0}', ';', '{1}', ';', '{2}', ';', 'no']).format(
-                        package.get_well_known_name(),
-                        class_name, class_token)
-                    classes_supported_list.append(class_entry)
+                print(f"Checking for {package.serialize()}; \t Class Token {checked_class_token}")
+                constant_pool_content[43] = int(checked_class_token)
+                with open(path.join(self.base_path, 'template_class', 'test', 'javacard', 'ConstantPool.cap'), 'wb') as f:
+                    f.write(constant_pool_content)
+
+                uninstall = self.check_classtoken(package, uninstall, checked_class_token)
+
+                print(f"***Class Name {package.get_well_known_name()}.{checked_class_name} is {'Not ' if not uninstall else ''}Supported")
+                class_entry = f"{package.get_well_known_name()};{checked_class_name};{checked_class_token};{'yes' if uninstall else 'no'}"
+                classes_supported_list.append(class_entry)
 
         return uninstall
 
@@ -796,7 +790,7 @@ class AIDScanner:
         supported = []
         classes_supported = []
         tested = {}
-        self.scan_globalplatform_api(card_info, supported_caps, supported, tested, classes_supported, class_range)
+        # self.scan_globalplatform_api(card_info, supported_caps, supported, tested, classes_supported, class_range)
         self.test_upload_caps(supported_caps)
 
         # scan standard JC API
