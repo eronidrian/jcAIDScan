@@ -1,0 +1,7701 @@
+export file {		// javacard/security
+	magic	00FACADE		 // in hex
+	minor_version	1
+	major_version	2
+	constant_pool_count	478
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	clearKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getSize
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getType
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	isInitialized
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	javacard/security/Key
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	8		// javacard/security/Key
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	10		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	javacard/security/SecretKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	12		// javacard/security/SecretKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setP
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setQ
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getP
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getQ
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	javacard/security/DHKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	22		// javacard/security/DHKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	javacard/security/PrivateKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	24		// javacard/security/PrivateKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	javacard/security/PublicKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	26		// javacard/security/PublicKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	javacard/security/DSAKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	28		// javacard/security/DSAKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getX
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setX
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	javacard/security/DSAPrivateKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	32		// javacard/security/DSAPrivateKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacard/security/DSAPublicKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	36		// javacard/security/DSAPublicKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	setFieldFP
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	setFieldF2M
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	(SSS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setB
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setR
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setK
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	getField
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getB
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getR
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getK
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	copyDomainParametersFrom
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/security/ECKey;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	javacard/security/ECKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	53		// javacard/security/ECKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacard/security/ECPrivateKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	57		// javacard/security/ECPrivateKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	setW
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	getW
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	javacard/security/ECPublicKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	61		// javacard/security/ECPublicKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	setKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	javacard/security/HMACKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	66		// javacard/security/HMACKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	([BS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	javacard/security/DESKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	69		// javacard/security/DESKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	javacard/security/KoreanSEEDKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	71		// javacard/security/KoreanSEEDKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacard/security/DHPrivateKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	73		// javacard/security/DHPrivateKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	javacard/security/DHPublicKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	75		// javacard/security/DHPublicKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getDP1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	getDQ1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	getPQ
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	setDP1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	setDQ1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	setPQ
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	javacard/security/RSAPrivateCrtKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	83		// javacard/security/RSAPrivateCrtKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getExponent
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	getModulus
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	setExponent
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	setModulus
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	javacard/security/RSAPrivateKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	89		// javacard/security/RSAPrivateKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacard/security/RSAPublicKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	91		// javacard/security/RSAPublicKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	javacard/security/AESKey
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	93		// javacard/security/AESKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	init
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	(Ljavacard/security/Key;B)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	beginVerify
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	sign
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	([BSS[BS[SS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	verify
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	getAlgorithm
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getLength
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	update
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	javacard/security/SignatureMessageRecovery
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	106		// javacard/security/SignatureMessageRecovery
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	ALG_NULL
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	0
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	ALG_SHA
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	ALG_MD5
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_RIPEMD160
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_SHA_256
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_SHA_384
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_SHA_512
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	6
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_SHA_224
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	7
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_SHA3_224
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_SHA3_256
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	9
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_SHA3_384
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	10
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_SHA3_512
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	11
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	LENGTH_MD5
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	16
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_RIPEMD160
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	20
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	LENGTH_SHA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_SHA_224
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	28
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_SHA_256
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	32
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_SHA_384
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	48
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_SHA_512
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	64
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_SHA3_224
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_SHA3_256
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_SHA3_384
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_SHA3_512
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getInstance
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	(BZ)Ljavacard/security/MessageDigest;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	getInitializedMessageDigestInstance
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	48
+			bytes	(BZ)Ljavacard/security/InitializedMessageDigest;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	doFinal
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	([BSS[BS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	reset
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	javacard/security/MessageDigest
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	161		// javacard/security/MessageDigest
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	open
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	44
+			bytes	(B)Ljavacard/security/MessageDigest$OneShot;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	close
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/security/MessageDigest$OneShot
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	166		// javacard/security/MessageDigest$OneShot
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	setInitialDigest
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	([BSS[BSS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	javacard/security/InitializedMessageDigest
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	170		// javacard/security/InitializedMessageDigest
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	55
+			bytes	(B)Ljavacard/security/InitializedMessageDigest$OneShot;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	50
+			bytes	javacard/security/InitializedMessageDigest$OneShot
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	173		// javacard/security/InitializedMessageDigest$OneShot
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ILLEGAL_VALUE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	UNINITIALIZED_KEY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	NO_SUCH_ALGORITHM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	INVALID_INIT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ILLEGAL_USE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	throwIt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	setReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	javacard/security/CryptoException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	184		// javacard/security/CryptoException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	186		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	188		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	java/lang/RuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	190		// java/lang/RuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/CardRuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	192		// javacard/framework/CardRuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	ALG_EC_SVDP_DH
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_EC_SVDP_DH_KDF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	ALG_EC_SVDP_DHC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_EC_SVDP_DHC_KDF
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	ALG_EC_SVDP_DH_PLAIN
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_EC_SVDP_DHC_PLAIN
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	ALG_EC_PACE_GM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_EC_SVDP_DH_PLAIN_XY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_DH_PLAIN
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	36
+			bytes	(BZ)Ljavacard/security/KeyAgreement;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	(Ljavacard/security/PrivateKey;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	generateSecret
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	javacard/security/KeyAgreement
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	206		// javacard/security/KeyAgreement
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	TYPE_DES_TRANSIENT_RESET
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	TYPE_DES_TRANSIENT_DESELECT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	TYPE_DES
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	TYPE_RSA_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	TYPE_RSA_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	TYPE_RSA_CRT_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	TYPE_DSA_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	TYPE_DSA_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	TYPE_EC_F2M_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	TYPE_EC_F2M_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	TYPE_EC_FP_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	TYPE_EC_FP_PRIVATE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	12
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	TYPE_AES_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	13
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	TYPE_AES_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	14
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	TYPE_AES
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	15
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	TYPE_KOREAN_SEED_TRANSIENT_RESET
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	TYPE_KOREAN_SEED_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	17
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	TYPE_KOREAN_SEED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	18
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	TYPE_HMAC_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	19
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	TYPE_HMAC_TRANSIENT_DESELECT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	TYPE_HMAC
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	21
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	TYPE_RSA_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	22
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	TYPE_RSA_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	23
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	36
+			bytes	TYPE_RSA_CRT_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	24
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	TYPE_RSA_CRT_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	25
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	TYPE_DSA_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	26
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	TYPE_DSA_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	27
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	TYPE_EC_F2M_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	38
+			bytes	TYPE_EC_F2M_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	29
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	TYPE_EC_FP_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	30
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	TYPE_EC_FP_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	31
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	TYPE_DH_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	TYPE_DH_PUBLIC_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	33
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	TYPE_DH_PUBLIC_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	34
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	TYPE_DH_PRIVATE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	35
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	TYPE_DH_PRIVATE_TRANSIENT_DESELECT
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	36
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	TYPE_DH_PRIVATE_TRANSIENT_RESET
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	37
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_TYPE_DES
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_TYPE_AES
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_TYPE_DSA_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	ALG_TYPE_DSA_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	ALG_TYPE_EC_F2M_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_TYPE_EC_F2M_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_TYPE_EC_FP_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	ALG_TYPE_EC_FP_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_TYPE_HMAC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	ALG_TYPE_KOREAN_SEED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_TYPE_RSA_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	ALG_TYPE_RSA_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	ALG_TYPE_RSA_CRT_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_TYPE_DH_PUBLIC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_TYPE_DH_PRIVATE
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	ALG_TYPE_EC_F2M_PARAMETERS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_TYPE_EC_FP_PARAMETERS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_TYPE_DSA_PARAMETERS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	ALG_TYPE_DH_PARAMETERS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	LENGTH_DES
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_DES3_2KEY
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_DES3_3KEY
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	192
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_RSA_512
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	512
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_RSA_736
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	736
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_RSA_768
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	768
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_RSA_896
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	896
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_1024
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1024
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_1280
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1280
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_1536
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1536
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_1984
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1984
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_2048
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2048
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_3072
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3072
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_RSA_4096
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4096
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_DSA_512
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_DSA_768
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	LENGTH_DSA_1024
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_112
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	112
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	LENGTH_EC_F2M_113
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	113
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	LENGTH_EC_F2M_131
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	131
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_160
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	160
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	LENGTH_EC_F2M_163
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	163
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_192
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	LENGTH_EC_F2M_193
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	193
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_224
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	224
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_256
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	256
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_384
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	384
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	LENGTH_EC_FP_521
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	521
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_AES_128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_AES_192
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_AES_256
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	LENGTH_KOREAN_SEED_128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	LENGTH_HMAC_SHA_1_BLOCK_64
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	LENGTH_HMAC_SHA_256_BLOCK_64
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	LENGTH_HMAC_SHA_384_BLOCK_128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	LENGTH_HMAC_SHA_512_BLOCK_128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_DH_1024
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	LENGTH_DH_2048
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	buildKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(BSZ)Ljavacard/security/Key;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	(BBSZ)Ljavacard/security/Key;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	buildKeyWithSharedDomain
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	51
+			bytes	(BBLjavacard/security/Key;Z)Ljavacard/security/Key;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	javacard/security/KeyBuilder
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	353		// javacard/security/KeyBuilder
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_PSEUDO_RANDOM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_SECURE_RANDOM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	ALG_TRNG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_PRESEEDED_DRBG
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	8
+			bytes	ALG_FAST
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_KEYGENERATION
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	(B)Ljavacard/security/RandomData;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	generateData
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	setSeed
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	nextBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	javacard/security/RandomData
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	365		// javacard/security/RandomData
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	41
+			bytes	(B)Ljavacard/security/RandomData$OneShot;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	36
+			bytes	javacard/security/RandomData$OneShot
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	368		// javacard/security/RandomData$OneShot
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	ALG_RSA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_RSA_CRT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	ALG_DSA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	ALG_EC_F2M
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	ALG_EC_FP
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	ALG_DH
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	5
+			bytes	(BS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	62
+			bytes	(Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	genKeyPair
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	10
+			bytes	getPrivate
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	()Ljavacard/security/PrivateKey;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getPublic
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	()Ljavacard/security/PublicKey;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	javacard/security/KeyPair
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	383		// javacard/security/KeyPair
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_DES_MAC4_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_DES_MAC8_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_DES_MAC4_ISO9797_M1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_DES_MAC8_ISO9797_M1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_DES_MAC4_ISO9797_M2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_DES_MAC8_ISO9797_M2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_DES_MAC4_PKCS5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_DES_MAC8_PKCS5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_RSA_SHA_ISO9796
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_RSA_SHA_PKCS1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_RSA_MD5_PKCS1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_RSA_RIPEMD160_ISO9796
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	23
+			bytes	ALG_RSA_RIPEMD160_PKCS1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	ALG_DSA_SHA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_RSA_SHA_RFC2409
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	ALG_RSA_MD5_RFC2409
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_ECDSA_SHA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_AES_MAC_128_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	ALG_AES_CMAC_128
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	49
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	ALG_DES_MAC4_ISO9797_1_M2_ALG3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	ALG_DES_MAC8_ISO9797_1_M2_ALG3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_SHA_PKCS1_PSS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_MD5_PKCS1_PSS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	ALG_RSA_RIPEMD160_PKCS1_PSS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ALG_HMAC_SHA1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	ALG_HMAC_SHA_256
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	ALG_HMAC_SHA_384
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	ALG_HMAC_SHA_512
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	ALG_HMAC_MD5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALG_HMAC_RIPEMD160
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	ALG_RSA_SHA_ISO9796_MR
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	ALG_RSA_RIPEMD160_ISO9796_MR
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_KOREAN_SEED_MAC_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ECDSA_SHA_256
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ECDSA_SHA_384
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_AES_MAC_192_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_AES_MAC_256_NOPAD
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ECDSA_SHA_224
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ECDSA_SHA_512
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	38
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_SHA_224_PKCS1
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	39
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_SHA_256_PKCS1
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	40
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_SHA_384_PKCS1
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	41
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	ALG_RSA_SHA_512_PKCS1
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	42
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_RSA_SHA_224_PKCS1_PSS
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	43
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_RSA_SHA_256_PKCS1_PSS
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	44
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_RSA_SHA_384_PKCS1_PSS
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	45
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	ALG_RSA_SHA_512_PKCS1_PSS
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	46
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	ALG_DES_MAC4_ISO9797_1_M1_ALG3
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	47
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	ALG_DES_MAC8_ISO9797_1_M1_ALG3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	SIG_CIPHER_DES_MAC4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	SIG_CIPHER_DES_MAC8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	SIG_CIPHER_RSA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	SIG_CIPHER_DSA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	SIG_CIPHER_ECDSA
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	SIG_CIPHER_ECDSA_PLAIN
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	SIG_CIPHER_AES_MAC128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	SIG_CIPHER_AES_CMAC128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	SIG_CIPHER_HMAC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	SIG_CIPHER_KOREAN_SEED_MAC
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	MODE_SIGN
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	MODE_VERIFY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	(BZ)Ljavacard/security/Signature;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	(BBBZ)Ljavacard/security/Signature;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	(Ljavacard/security/Key;B[BSS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	([BSS[BSS)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	signPreComputedHash
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	verifyPreComputedHash
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	getMessageDigestAlgorithm
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	getCipherAlgorithm
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	getPaddingAlgorithm
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	javacard/security/Signature
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	466		// javacard/security/Signature
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	(BBB)Ljavacard/security/Signature$OneShot;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	35
+			bytes	javacard/security/Signature$OneShot
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	469		// javacard/security/Signature$OneShot
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ISO3309_CRC16
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	ALG_ISO3309_CRC32
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	32
+			bytes	(BZ)Ljavacard/security/Checksum;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	javacard/security/Checksum
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	474		// javacard/security/Checksum
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	javacard/security
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	476		// javacard/security
+			minor_version	6
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x62:0x1:0x2
+		}
+	}
+	this_package	477
+	referenced_package_count	-1
+	export_class_count	34
+	export_classes {
+		class_info {		// javacard/security/Key
+			token	0
+			access_flags	public abstract interface
+			name_index	9		// javacard/security/Key
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/SecretKey
+			token	4
+			access_flags	public abstract interface
+			name_index	13		// javacard/security/SecretKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/DHKey
+			token	27
+			access_flags	public abstract interface
+			name_index	23		// javacard/security/DHKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/PrivateKey
+			token	2
+			access_flags	public abstract interface
+			name_index	25		// javacard/security/PrivateKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/PublicKey
+			token	3
+			access_flags	public abstract interface
+			name_index	27		// javacard/security/PublicKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/DSAKey
+			token	1
+			access_flags	public abstract interface
+			name_index	29		// javacard/security/DSAKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/DSAPrivateKey
+			token	5
+			access_flags	public abstract interface
+			name_index	33		// javacard/security/DSAPrivateKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	25		// javacard/security/PrivateKey
+				constant_pool_index	29		// javacard/security/DSAKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	12
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	30		// getX
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	31		// setX
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	12
+		}
+		class_info {		// javacard/security/DSAPublicKey
+			token	6
+			access_flags	public abstract interface
+			name_index	37		// javacard/security/DSAPublicKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	27		// javacard/security/PublicKey
+				constant_pool_index	29		// javacard/security/DSAKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	12
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	34		// getY
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	35		// setY
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	12
+		}
+		class_info {		// javacard/security/ECKey
+			token	17
+			access_flags	public abstract interface
+			name_index	54		// javacard/security/ECKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	15
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	38		// setFieldFP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	41		// (SSS)V
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	42		// setA
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	43		// setB
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	44		// setR
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	45		// setK
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	46		// getField
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	47		// getA
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	48		// getB
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	12
+					access_flags	public abstract
+					name_index	49		// getR
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	13
+					access_flags	public abstract
+					name_index	50		// getK
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	14
+					access_flags	public abstract
+					name_index	51		// copyDomainParametersFrom
+					Descriptor_Index	52		// (Ljavacard/security/ECKey;)V
+				}
+			}
+			CAP22_inheritable_count	15
+		}
+		class_info {		// javacard/security/ECPrivateKey
+			token	18
+			access_flags	public abstract interface
+			name_index	58		// javacard/security/ECPrivateKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	25		// javacard/security/PrivateKey
+				constant_pool_index	54		// javacard/security/ECKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	21
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	38		// setFieldFP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	41		// (SSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	42		// setA
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	43		// setB
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	44		// setR
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	45		// setK
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	12
+					access_flags	public abstract
+					name_index	46		// getField
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	13
+					access_flags	public abstract
+					name_index	47		// getA
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	14
+					access_flags	public abstract
+					name_index	48		// getB
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	15
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	16
+					access_flags	public abstract
+					name_index	49		// getR
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	17
+					access_flags	public abstract
+					name_index	50		// getK
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	18
+					access_flags	public abstract
+					name_index	55		// setS
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	19
+					access_flags	public abstract
+					name_index	56		// getS
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	20
+					access_flags	public abstract
+					name_index	51		// copyDomainParametersFrom
+					Descriptor_Index	52		// (Ljavacard/security/ECKey;)V
+				}
+			}
+			CAP22_inheritable_count	21
+		}
+		class_info {		// javacard/security/ECPublicKey
+			token	19
+			access_flags	public abstract interface
+			name_index	62		// javacard/security/ECPublicKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	27		// javacard/security/PublicKey
+				constant_pool_index	54		// javacard/security/ECKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	21
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	38		// setFieldFP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	39		// setFieldF2M
+					Descriptor_Index	41		// (SSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	42		// setA
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	43		// setB
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	44		// setR
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	45		// setK
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	12
+					access_flags	public abstract
+					name_index	46		// getField
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	13
+					access_flags	public abstract
+					name_index	47		// getA
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	14
+					access_flags	public abstract
+					name_index	48		// getB
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	15
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	16
+					access_flags	public abstract
+					name_index	49		// getR
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	17
+					access_flags	public abstract
+					name_index	50		// getK
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	18
+					access_flags	public abstract
+					name_index	59		// setW
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	19
+					access_flags	public abstract
+					name_index	60		// getW
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	20
+					access_flags	public abstract
+					name_index	51		// copyDomainParametersFrom
+					Descriptor_Index	52		// (Ljavacard/security/ECKey;)V
+				}
+			}
+			CAP22_inheritable_count	21
+		}
+		class_info {		// javacard/security/HMACKey
+			token	23
+			access_flags	public abstract interface
+			name_index	67		// javacard/security/HMACKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	13		// javacard/security/SecretKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	63		// setKey
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	64		// getKey
+					Descriptor_Index	65		// ([BS)B
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/DESKey
+			token	10
+			access_flags	public abstract interface
+			name_index	70		// javacard/security/DESKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	13		// javacard/security/SecretKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	64		// getKey
+					Descriptor_Index	65		// ([BS)B
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	63		// setKey
+					Descriptor_Index	68		// ([BS)V
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/KoreanSEEDKey
+			token	24
+			access_flags	public abstract interface
+			name_index	72		// javacard/security/KoreanSEEDKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	13		// javacard/security/SecretKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	63		// setKey
+					Descriptor_Index	68		// ([BS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	64		// getKey
+					Descriptor_Index	65		// ([BS)B
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/DHPrivateKey
+			token	28
+			access_flags	public abstract interface
+			name_index	74		// javacard/security/DHPrivateKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	25		// javacard/security/PrivateKey
+				constant_pool_index	23		// javacard/security/DHKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	12
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	31		// setX
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	30		// getX
+					Descriptor_Index	19		// ([BS)S
+				}
+			}
+			CAP22_inheritable_count	12
+		}
+		class_info {		// javacard/security/DHPublicKey
+			token	29
+			access_flags	public abstract interface
+			name_index	76		// javacard/security/DHPublicKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	3
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	27		// javacard/security/PublicKey
+				constant_pool_index	23		// javacard/security/DHKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	12
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	17		// setG
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	21		// getG
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	35		// setY
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	34		// getY
+					Descriptor_Index	19		// ([BS)S
+				}
+			}
+			CAP22_inheritable_count	12
+		}
+		class_info {		// javacard/security/RSAPrivateCrtKey
+			token	7
+			access_flags	public abstract interface
+			name_index	84		// javacard/security/RSAPrivateCrtKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	25		// javacard/security/PrivateKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	14
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	77		// getDP1
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	78		// getDQ1
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	18		// getP
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	79		// getPQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	20		// getQ
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	80		// setDP1
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	81		// setDQ1
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	14		// setP
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	12
+					access_flags	public abstract
+					name_index	82		// setPQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	13
+					access_flags	public abstract
+					name_index	16		// setQ
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	14
+		}
+		class_info {		// javacard/security/RSAPrivateKey
+			token	8
+			access_flags	public abstract interface
+			name_index	90		// javacard/security/RSAPrivateKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	25		// javacard/security/PrivateKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	8
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	85		// getExponent
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	86		// getModulus
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	87		// setExponent
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	88		// setModulus
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	8
+		}
+		class_info {		// javacard/security/RSAPublicKey
+			token	9
+			access_flags	public abstract interface
+			name_index	92		// javacard/security/RSAPublicKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	27		// javacard/security/PublicKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	8
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	85		// getExponent
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	86		// getModulus
+					Descriptor_Index	19		// ([BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	87		// setExponent
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	88		// setModulus
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	8
+		}
+		class_info {		// javacard/security/AESKey
+			token	20
+			access_flags	public abstract interface
+			name_index	94		// javacard/security/AESKey
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	2
+			interfaces {
+				constant_pool_index	9		// javacard/security/Key
+				constant_pool_index	13		// javacard/security/SecretKey
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// clearKey
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// getSize
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// getType
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// isInitialized
+					Descriptor_Index	7		// ()Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	63		// setKey
+					Descriptor_Index	68		// ([BS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	64		// getKey
+					Descriptor_Index	65		// ([BS)B
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/SignatureMessageRecovery
+			token	25
+			access_flags	public abstract interface
+			name_index	107		// javacard/security/SignatureMessageRecovery
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	7
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	95		// init
+					Descriptor_Index	96		// (Ljavacard/security/Key;B)V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	97		// beginVerify
+					Descriptor_Index	98		// ([BSS)S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	99		// sign
+					Descriptor_Index	100		// ([BSS[BS[SS)S
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	101		// verify
+					Descriptor_Index	102		// ([BSS)Z
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	104		// getLength
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	7
+		}
+		class_info {		// javacard/security/MessageDigest
+			token	11
+			access_flags	public abstract
+			name_index	162		// javacard/security/MessageDigest
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	23
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	108		// ALG_NULL
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	111		// value = 0
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	112		// ALG_SHA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	114		// ALG_MD5
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	116		// ALG_RIPEMD160
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	118		// ALG_SHA_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	120		// ALG_SHA_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	122		// ALG_SHA_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	124		// ALG_SHA_224
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	126		// ALG_SHA3_224
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	127		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	128		// ALG_SHA3_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	129		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	130		// ALG_SHA3_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	131		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	132		// ALG_SHA3_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	133		// value = 11
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	134		// LENGTH_MD5
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	135		// value = 16
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	136		// LENGTH_RIPEMD160
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	137		// value = 20
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	138		// LENGTH_SHA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	137		// value = 20
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	139		// LENGTH_SHA_224
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	140		// value = 28
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	141		// LENGTH_SHA_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	142		// value = 32
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	143		// LENGTH_SHA_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	144		// value = 48
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	145		// LENGTH_SHA_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	146		// value = 64
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	147		// LENGTH_SHA3_224
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	140		// value = 28
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	148		// LENGTH_SHA3_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	142		// value = 32
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	149		// LENGTH_SHA3_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	144		// value = 48
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	150		// LENGTH_SHA3_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	146		// value = 64
+				}
+				}
+			}
+			}
+			export_methods_count	9
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	152		// (BZ)Ljavacard/security/MessageDigest;
+				}
+				method_info {
+					token	2
+					access_flags	public static final
+					name_index	153		// getInitializedMessageDigestInstance
+					Descriptor_Index	154		// (BZ)Ljavacard/security/InitializedMessageDigest;
+				}
+				method_info {
+					token	1
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	158		// doFinal
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	104		// getLength
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	160		// reset
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/MessageDigest$OneShot
+			token	30
+			access_flags	public final
+			name_index	167		// javacard/security/MessageDigest$OneShot
+			export_supers_count	2
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	162		// javacard/security/MessageDigest
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	8
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	163		// open
+					Descriptor_Index	164		// (B)Ljavacard/security/MessageDigest$OneShot;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	158		// doFinal
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	104		// getLength
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	160		// reset
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	165		// close
+					Descriptor_Index	1		// ()V
+				}
+			}
+			CAP22_inheritable_count	7
+		}
+		class_info {		// javacard/security/InitializedMessageDigest
+			token	26
+			access_flags	public abstract
+			name_index	171		// javacard/security/InitializedMessageDigest
+			export_supers_count	2
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	162		// javacard/security/MessageDigest
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	8
+			methods {
+				method_info {
+					token	0
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	158		// doFinal
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	104		// getLength
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	160		// reset
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	168		// setInitialDigest
+					Descriptor_Index	169		// ([BSS[BSS)V
+				}
+			}
+			CAP22_inheritable_count	7
+		}
+		class_info {		// javacard/security/InitializedMessageDigest$OneShot
+			token	31
+			access_flags	public final
+			name_index	174		// javacard/security/InitializedMessageDigest$OneShot
+			export_supers_count	3
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	162		// javacard/security/MessageDigest
+				constant_pool_index	171		// javacard/security/InitializedMessageDigest
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	9
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	163		// open
+					Descriptor_Index	172		// (B)Ljavacard/security/InitializedMessageDigest$OneShot;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	158		// doFinal
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	104		// getLength
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	160		// reset
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	6
+					access_flags	public
+					name_index	168		// setInitialDigest
+					Descriptor_Index	169		// ([BSS[BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	165		// close
+					Descriptor_Index	1		// ()V
+				}
+			}
+			CAP22_inheritable_count	8
+		}
+		class_info {		// javacard/security/CryptoException
+			token	12
+			access_flags	public
+			name_index	185		// javacard/security/CryptoException
+			export_supers_count	5
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	187		// java/lang/Throwable
+				constant_pool_index	189		// java/lang/Exception
+				constant_pool_index	191		// java/lang/RuntimeException
+				constant_pool_index	193		// javacard/framework/CardRuntimeException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	5
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	175		// ILLEGAL_VALUE
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	177		// UNINITIALIZED_KEY
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	178		// NO_SUCH_ALGORITHM
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	179		// INVALID_INIT
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	180		// ILLEGAL_USE
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	155		// <init>
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	181		// throwIt
+					Descriptor_Index	40		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	182		// getReason
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	183		// setReason
+					Descriptor_Index	40		// (S)V
+				}
+			}
+			CAP22_inheritable_count	3
+		}
+		class_info {		// javacard/security/KeyAgreement
+			token	22
+			access_flags	public abstract
+			name_index	207		// javacard/security/KeyAgreement
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	9
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	194		// ALG_EC_SVDP_DH
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	195		// ALG_EC_SVDP_DH_KDF
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	196		// ALG_EC_SVDP_DHC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	197		// ALG_EC_SVDP_DHC_KDF
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	198		// ALG_EC_SVDP_DH_PLAIN
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	199		// ALG_EC_SVDP_DHC_PLAIN
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	200		// ALG_EC_PACE_GM
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	201		// ALG_EC_SVDP_DH_PLAIN_XY
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	202		// ALG_DH_PLAIN
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	203		// (BZ)Ljavacard/security/KeyAgreement;
+				}
+				method_info {
+					token	1
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	95		// init
+					Descriptor_Index	204		// (Ljavacard/security/PrivateKey;)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	205		// generateSecret
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/KeyBuilder
+			token	13
+			access_flags	public
+			name_index	354		// javacard/security/KeyBuilder
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	95
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	208		// TYPE_DES_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	209		// TYPE_DES_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	210		// TYPE_DES
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	211		// TYPE_RSA_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	212		// TYPE_RSA_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	213		// TYPE_RSA_CRT_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	214		// TYPE_DSA_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	215		// TYPE_DSA_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	127		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	216		// TYPE_EC_F2M_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	129		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	217		// TYPE_EC_F2M_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	131		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	218		// TYPE_EC_FP_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	133		// value = 11
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	219		// TYPE_EC_FP_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	220		// value = 12
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	221		// TYPE_AES_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	222		// value = 13
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	223		// TYPE_AES_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	224		// value = 14
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	225		// TYPE_AES
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	226		// value = 15
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	227		// TYPE_KOREAN_SEED_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	135		// value = 16
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	228		// TYPE_KOREAN_SEED_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	229		// value = 17
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	230		// TYPE_KOREAN_SEED
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	231		// value = 18
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	232		// TYPE_HMAC_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	233		// value = 19
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	234		// TYPE_HMAC_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	137		// value = 20
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	235		// TYPE_HMAC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	236		// value = 21
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	237		// TYPE_RSA_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	238		// value = 22
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	239		// TYPE_RSA_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	240		// value = 23
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	241		// TYPE_RSA_CRT_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	242		// value = 24
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	243		// TYPE_RSA_CRT_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	244		// value = 25
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	245		// TYPE_DSA_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	246		// value = 26
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	247		// TYPE_DSA_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	248		// value = 27
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	249		// TYPE_EC_F2M_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	140		// value = 28
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	250		// TYPE_EC_F2M_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	251		// value = 29
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	252		// TYPE_EC_FP_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	253		// value = 30
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	254		// TYPE_EC_FP_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	255		// value = 31
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	256		// TYPE_DH_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	142		// value = 32
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	257		// TYPE_DH_PUBLIC_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	258		// value = 33
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	259		// TYPE_DH_PUBLIC_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	260		// value = 34
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	261		// TYPE_DH_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	262		// value = 35
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	263		// TYPE_DH_PRIVATE_TRANSIENT_DESELECT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	264		// value = 36
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	265		// TYPE_DH_PRIVATE_TRANSIENT_RESET
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	266		// value = 37
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	267		// ALG_TYPE_DES
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	268		// ALG_TYPE_AES
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	269		// ALG_TYPE_DSA_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	270		// ALG_TYPE_DSA_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	271		// ALG_TYPE_EC_F2M_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	272		// ALG_TYPE_EC_F2M_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	273		// ALG_TYPE_EC_FP_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	274		// ALG_TYPE_EC_FP_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	127		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	275		// ALG_TYPE_HMAC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	129		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	276		// ALG_TYPE_KOREAN_SEED
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	131		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	277		// ALG_TYPE_RSA_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	133		// value = 11
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	278		// ALG_TYPE_RSA_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	220		// value = 12
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	279		// ALG_TYPE_RSA_CRT_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	222		// value = 13
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	280		// ALG_TYPE_DH_PUBLIC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	224		// value = 14
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	281		// ALG_TYPE_DH_PRIVATE
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	226		// value = 15
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	282		// ALG_TYPE_EC_F2M_PARAMETERS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	135		// value = 16
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	283		// ALG_TYPE_EC_FP_PARAMETERS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	229		// value = 17
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	284		// ALG_TYPE_DSA_PARAMETERS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	231		// value = 18
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	285		// ALG_TYPE_DH_PARAMETERS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	233		// value = 19
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	286		// LENGTH_DES
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	146		// value = 64
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	287		// LENGTH_DES3_2KEY
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	289		// LENGTH_DES3_3KEY
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	290		// value = 192
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	291		// LENGTH_RSA_512
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	292		// value = 512
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	293		// LENGTH_RSA_736
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	294		// value = 736
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	295		// LENGTH_RSA_768
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	296		// value = 768
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	297		// LENGTH_RSA_896
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	298		// value = 896
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	299		// LENGTH_RSA_1024
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	300		// value = 1024
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	301		// LENGTH_RSA_1280
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	302		// value = 1280
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	303		// LENGTH_RSA_1536
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	304		// value = 1536
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	305		// LENGTH_RSA_1984
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	306		// value = 1984
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	307		// LENGTH_RSA_2048
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	308		// value = 2048
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	309		// LENGTH_RSA_3072
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	310		// value = 3072
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	311		// LENGTH_RSA_4096
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	312		// value = 4096
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	313		// LENGTH_DSA_512
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	292		// value = 512
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	314		// LENGTH_DSA_768
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	296		// value = 768
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	315		// LENGTH_DSA_1024
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	300		// value = 1024
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	316		// LENGTH_EC_FP_112
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	317		// value = 112
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	318		// LENGTH_EC_F2M_113
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	319		// value = 113
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	320		// LENGTH_EC_FP_128
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	321		// LENGTH_EC_F2M_131
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	322		// value = 131
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	323		// LENGTH_EC_FP_160
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	324		// value = 160
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	325		// LENGTH_EC_F2M_163
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	326		// value = 163
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	327		// LENGTH_EC_FP_192
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	290		// value = 192
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	328		// LENGTH_EC_F2M_193
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	329		// value = 193
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	330		// LENGTH_EC_FP_224
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	331		// value = 224
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	332		// LENGTH_EC_FP_256
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	333		// value = 256
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	334		// LENGTH_EC_FP_384
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	335		// value = 384
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	336		// LENGTH_EC_FP_521
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	337		// value = 521
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	338		// LENGTH_AES_128
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	339		// LENGTH_AES_192
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	290		// value = 192
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	340		// LENGTH_AES_256
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	333		// value = 256
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	341		// LENGTH_KOREAN_SEED_128
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	342		// LENGTH_HMAC_SHA_1_BLOCK_64
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	146		// value = 64
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	343		// LENGTH_HMAC_SHA_256_BLOCK_64
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	146		// value = 64
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	344		// LENGTH_HMAC_SHA_384_BLOCK_128
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	345		// LENGTH_HMAC_SHA_512_BLOCK_128
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	288		// value = 128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	346		// LENGTH_DH_1024
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	300		// value = 1024
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	347		// LENGTH_DH_2048
+				Descriptor_Index	176		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	308		// value = 2048
+				}
+				}
+			}
+			}
+			export_methods_count	4
+			methods {
+				method_info {
+					token	0
+					access_flags	public static
+					name_index	348		// buildKey
+					Descriptor_Index	349		// (BSZ)Ljavacard/security/Key;
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	348		// buildKey
+					Descriptor_Index	350		// (BBSZ)Ljavacard/security/Key;
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	351		// buildKeyWithSharedDomain
+					Descriptor_Index	352		// (BBLjavacard/security/Key;Z)Ljavacard/security/Key;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+		class_info {		// javacard/security/RandomData
+			token	14
+			access_flags	public abstract
+			name_index	366		// javacard/security/RandomData
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	6
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	355		// ALG_PSEUDO_RANDOM
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	356		// ALG_SECURE_RANDOM
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	357		// ALG_TRNG
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	358		// ALG_PRESEEDED_DRBG
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	359		// ALG_FAST
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	360		// ALG_KEYGENERATION
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			}
+			export_methods_count	7
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	361		// (B)Ljavacard/security/RandomData;
+				}
+				method_info {
+					token	1
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	362		// generateData
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	363		// setSeed
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	364		// nextBytes
+					Descriptor_Index	98		// ([BSS)S
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+			}
+			CAP22_inheritable_count	5
+		}
+		class_info {		// javacard/security/RandomData$OneShot
+			token	32
+			access_flags	public final
+			name_index	369		// javacard/security/RandomData$OneShot
+			export_supers_count	2
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	366		// javacard/security/RandomData
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	7
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	163		// open
+					Descriptor_Index	367		// (B)Ljavacard/security/RandomData$OneShot;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	362		// generateData
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	363		// setSeed
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	364		// nextBytes
+					Descriptor_Index	98		// ([BSS)S
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	165		// close
+					Descriptor_Index	1		// ()V
+				}
+			}
+			CAP22_inheritable_count	6
+		}
+		class_info {		// javacard/security/KeyPair
+			token	16
+			access_flags	public final
+			name_index	384		// javacard/security/KeyPair
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	6
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	370		// ALG_RSA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	371		// ALG_RSA_CRT
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	372		// ALG_DSA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	373		// ALG_EC_F2M
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	374		// ALG_EC_FP
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	375		// ALG_DH
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			}
+			export_methods_count	6
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	155		// <init>
+					Descriptor_Index	376		// (BS)V
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	155		// <init>
+					Descriptor_Index	377		// (Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public final
+					name_index	378		// genKeyPair
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	379		// getPrivate
+					Descriptor_Index	380		// ()Ljavacard/security/PrivateKey;
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	381		// getPublic
+					Descriptor_Index	382		// ()Ljavacard/security/PublicKey;
+				}
+			}
+			CAP22_inheritable_count	4
+		}
+		class_info {		// javacard/security/Signature
+			token	15
+			access_flags	public abstract
+			name_index	467		// javacard/security/Signature
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	61
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	385		// ALG_DES_MAC4_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	386		// ALG_DES_MAC8_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	387		// ALG_DES_MAC4_ISO9797_M1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	388		// ALG_DES_MAC8_ISO9797_M1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	389		// ALG_DES_MAC4_ISO9797_M2
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	390		// ALG_DES_MAC8_ISO9797_M2
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	391		// ALG_DES_MAC4_PKCS5
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	392		// ALG_DES_MAC8_PKCS5
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	127		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	393		// ALG_RSA_SHA_ISO9796
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	129		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	394		// ALG_RSA_SHA_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	131		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	395		// ALG_RSA_MD5_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	133		// value = 11
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	396		// ALG_RSA_RIPEMD160_ISO9796
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	220		// value = 12
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	397		// ALG_RSA_RIPEMD160_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	222		// value = 13
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	398		// ALG_DSA_SHA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	224		// value = 14
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	399		// ALG_RSA_SHA_RFC2409
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	226		// value = 15
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	400		// ALG_RSA_MD5_RFC2409
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	135		// value = 16
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	401		// ALG_ECDSA_SHA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	229		// value = 17
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	402		// ALG_AES_MAC_128_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	231		// value = 18
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	403		// ALG_AES_CMAC_128
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	404		// value = 49
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	405		// ALG_DES_MAC4_ISO9797_1_M2_ALG3
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	233		// value = 19
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	406		// ALG_DES_MAC8_ISO9797_1_M2_ALG3
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	137		// value = 20
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	407		// ALG_RSA_SHA_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	236		// value = 21
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	408		// ALG_RSA_MD5_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	238		// value = 22
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	409		// ALG_RSA_RIPEMD160_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	240		// value = 23
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	410		// ALG_HMAC_SHA1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	242		// value = 24
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	411		// ALG_HMAC_SHA_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	244		// value = 25
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	412		// ALG_HMAC_SHA_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	246		// value = 26
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	413		// ALG_HMAC_SHA_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	248		// value = 27
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	414		// ALG_HMAC_MD5
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	140		// value = 28
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	415		// ALG_HMAC_RIPEMD160
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	251		// value = 29
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	416		// ALG_RSA_SHA_ISO9796_MR
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	253		// value = 30
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	417		// ALG_RSA_RIPEMD160_ISO9796_MR
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	255		// value = 31
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	418		// ALG_KOREAN_SEED_MAC_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	142		// value = 32
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	419		// ALG_ECDSA_SHA_256
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	258		// value = 33
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	420		// ALG_ECDSA_SHA_384
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	260		// value = 34
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	421		// ALG_AES_MAC_192_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	262		// value = 35
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	422		// ALG_AES_MAC_256_NOPAD
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	264		// value = 36
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	423		// ALG_ECDSA_SHA_224
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	266		// value = 37
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	424		// ALG_ECDSA_SHA_512
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	425		// value = 38
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	426		// ALG_RSA_SHA_224_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	427		// value = 39
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	428		// ALG_RSA_SHA_256_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	429		// value = 40
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	430		// ALG_RSA_SHA_384_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	431		// value = 41
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	432		// ALG_RSA_SHA_512_PKCS1
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	433		// value = 42
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	434		// ALG_RSA_SHA_224_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	435		// value = 43
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	436		// ALG_RSA_SHA_256_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	437		// value = 44
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	438		// ALG_RSA_SHA_384_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	439		// value = 45
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	440		// ALG_RSA_SHA_512_PKCS1_PSS
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	441		// value = 46
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	442		// ALG_DES_MAC4_ISO9797_1_M1_ALG3
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	443		// value = 47
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	444		// ALG_DES_MAC8_ISO9797_1_M1_ALG3
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	144		// value = 48
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	445		// SIG_CIPHER_DES_MAC4
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	446		// SIG_CIPHER_DES_MAC8
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	447		// SIG_CIPHER_RSA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	117		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	448		// SIG_CIPHER_DSA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	119		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	449		// SIG_CIPHER_ECDSA
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	121		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	450		// SIG_CIPHER_ECDSA_PLAIN
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	129		// value = 9
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	451		// SIG_CIPHER_AES_MAC128
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	123		// value = 6
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	452		// SIG_CIPHER_AES_CMAC128
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	131		// value = 10
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	453		// SIG_CIPHER_HMAC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	125		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	454		// SIG_CIPHER_KOREAN_SEED_MAC
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	127		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	455		// MODE_SIGN
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	456		// MODE_VERIFY
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			}
+			export_methods_count	17
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	457		// (BZ)Ljavacard/security/Signature;
+				}
+				method_info {
+					token	2
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	458		// (BBBZ)Ljavacard/security/Signature;
+				}
+				method_info {
+					token	1
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	104		// getLength
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	95		// init
+					Descriptor_Index	96		// (Ljavacard/security/Key;B)V
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	95		// init
+					Descriptor_Index	459		// (Ljavacard/security/Key;B[BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public abstract
+					name_index	99		// sign
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public abstract
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public abstract
+					name_index	101		// verify
+					Descriptor_Index	460		// ([BSS[BSS)Z
+				}
+				method_info {
+					token	8
+					access_flags	public abstract
+					name_index	168		// setInitialDigest
+					Descriptor_Index	169		// ([BSS[BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public abstract
+					name_index	461		// signPreComputedHash
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	10
+					access_flags	public abstract
+					name_index	462		// verifyPreComputedHash
+					Descriptor_Index	460		// ([BSS[BSS)Z
+				}
+				method_info {
+					token	11
+					access_flags	public abstract
+					name_index	463		// getMessageDigestAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	12
+					access_flags	public abstract
+					name_index	464		// getCipherAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	13
+					access_flags	public abstract
+					name_index	465		// getPaddingAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+			}
+			CAP22_inheritable_count	14
+		}
+		class_info {		// javacard/security/Signature$OneShot
+			token	33
+			access_flags	public final
+			name_index	470		// javacard/security/Signature$OneShot
+			export_supers_count	2
+			supers {
+				constant_pool_index	11		// java/lang/Object
+				constant_pool_index	467		// javacard/security/Signature
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	16
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	163		// open
+					Descriptor_Index	468		// (BBB)Ljavacard/security/Signature$OneShot;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	104		// getLength
+					Descriptor_Index	3		// ()S
+				}
+				method_info {
+					token	3
+					access_flags	public
+					name_index	95		// init
+					Descriptor_Index	96		// (Ljavacard/security/Key;B)V
+				}
+				method_info {
+					token	4
+					access_flags	public
+					name_index	95		// init
+					Descriptor_Index	459		// (Ljavacard/security/Key;B[BSS)V
+				}
+				method_info {
+					token	5
+					access_flags	public
+					name_index	99		// sign
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	6
+					access_flags	public final
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	7
+					access_flags	public
+					name_index	101		// verify
+					Descriptor_Index	460		// ([BSS[BSS)Z
+				}
+				method_info {
+					token	8
+					access_flags	public
+					name_index	168		// setInitialDigest
+					Descriptor_Index	169		// ([BSS[BSS)V
+				}
+				method_info {
+					token	9
+					access_flags	public
+					name_index	461		// signPreComputedHash
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	10
+					access_flags	public
+					name_index	462		// verifyPreComputedHash
+					Descriptor_Index	460		// ([BSS[BSS)Z
+				}
+				method_info {
+					token	11
+					access_flags	public
+					name_index	463		// getMessageDigestAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	12
+					access_flags	public
+					name_index	464		// getCipherAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	13
+					access_flags	public
+					name_index	465		// getPaddingAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	14
+					access_flags	public
+					name_index	165		// close
+					Descriptor_Index	1		// ()V
+				}
+			}
+			CAP22_inheritable_count	15
+		}
+		class_info {		// javacard/security/Checksum
+			token	21
+			access_flags	public abstract
+			name_index	475		// javacard/security/Checksum
+			export_supers_count	1
+			supers {
+				constant_pool_index	11		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	2
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	471		// ALG_ISO3309_CRC16
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	113		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	472		// ALG_ISO3309_CRC32
+				Descriptor_Index	109		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	110		// ConstantValue
+					attribute_length	2
+					constantvalue_index	115		// value = 2
+				}
+				}
+			}
+			}
+			export_methods_count	7
+			methods {
+				method_info {
+					token	0
+					access_flags	public static final
+					name_index	151		// getInstance
+					Descriptor_Index	473		// (BZ)Ljavacard/security/Checksum;
+				}
+				method_info {
+					token	1
+					access_flags	protected
+					name_index	155		// <init>
+					Descriptor_Index	1		// ()V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	156		// equals
+					Descriptor_Index	157		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	95		// init
+					Descriptor_Index	15		// ([BSS)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	103		// getAlgorithm
+					Descriptor_Index	5		// ()B
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	158		// doFinal
+					Descriptor_Index	159		// ([BSS[BS)S
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	105		// update
+					Descriptor_Index	15		// ([BSS)V
+				}
+			}
+			CAP22_inheritable_count	5
+		}
+	}
+}

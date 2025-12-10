@@ -17,7 +17,7 @@ def add_line(line: list[str]):
         lines.append(line)
 
 def parse_signature(signature: str) -> str:
-    match = re.search(r"(\(.*\))", signature)
+    match = re.search(r"(\(.*\))(.*)", signature)
     signature = match.group(1)
 
     signature = re.sub(r'\[B', "byte[];", signature)
@@ -39,7 +39,23 @@ def parse_signature(signature: str) -> str:
 
     signature = re.sub(r';\)', ")", signature)
 
-    return signature
+    return_value = match.group(2)
+    return_value = re.sub(r'\[B', "byte[]", return_value)
+    return_value = re.sub(r'\[S', "short[]", return_value)
+    return_value = re.sub(r'\[Z', "boolean[]", return_value)
+    return_value = re.sub(r'\[I', "int[]", return_value)
+    return_value = re.sub(r'\[L(.*);', r'\1[]', return_value)
+
+    return_value = "byte" if return_value == "B" else return_value
+    return_value = "short" if return_value == "S" else return_value
+    return_value = "boolean" if return_value == "Z" else return_value
+    return_value = "int" if return_value == "I" else return_value
+    return_value = "void" if return_value == "V" else return_value
+    return_value = re.sub(r'L(.*);', r'\1', return_value)
+
+    return_value = re.sub("/", ".", return_value)
+
+    return return_value + signature
 
 
 def export_lines():
