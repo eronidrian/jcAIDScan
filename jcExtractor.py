@@ -9,7 +9,7 @@ BASE_PATH = '.'
 
 lines = []
 
-jc_version = "320"
+jc_version = "visa"
 
 
 def add_line(line: list[str]):

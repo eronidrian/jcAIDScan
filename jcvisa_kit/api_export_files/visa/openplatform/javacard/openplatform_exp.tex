@@ -1,0 +1,573 @@
+export file {		// visa/openplatform
+	magic	00FACADE		 // in hex
+	minor_version	1
+	major_version	2
+	constant_pool_count	57
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	openSecureChannel
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	(Ljavacard/framework/APDU;)B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	closeSecureChannel
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	decryptVerifyKey
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	30
+			bytes	(BLjavacard/framework/APDU;S)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	unwrap
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	(BLjavacard/framework/APDU;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	verifyExternalAuthenticate
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	visa/openplatform/ProviderSecurityDomain
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	9		// visa/openplatform/ProviderSecurityDomain
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	11		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	javacard/framework/Shareable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	13		// javacard/framework/Shareable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	APPLET_INSTALLED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	APPLET_SELECTABLE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	7
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	APPLET_PERSONALIZED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	15
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	APPLET_LOCKED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	-1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	APPLET_BLOCKED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	127
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	PACKAGE_LOADED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	CARD_OP_READY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	INITIALIZED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	CARD_SECURED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	CARD_LOCKED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	getCardContentState
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	getCardManagerState
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getCPLCData
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	(Ljavacard/framework/APDU;SSS)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	getTriesRemaining
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	getSecurityDomain
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	44
+			bytes	()Lvisa/openplatform/ProviderSecurityDomain;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	setCardContentState
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	lockCardManager
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	terminateCardManager
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	setPin
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	(Ljavacard/framework/APDU;S)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	verifyPin
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	setATRHistBytes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSB)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	visa/openplatform/OPSystem
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	53		// visa/openplatform/OPSystem
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	visa/openplatform
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	55		// visa/openplatform
+			minor_version	0
+			major_version	1
+			aid_length	7
+			aid	0xA0:0x0:0x0:0x0:0x3:0x0:0x0
+		}
+	}
+	this_package	56
+	referenced_package_count	-1
+	export_class_count	2
+	export_classes {
+		class_info {		// visa/openplatform/ProviderSecurityDomain
+			token	0
+			access_flags	public abstract interface shareable
+			name_index	10		// visa/openplatform/ProviderSecurityDomain
+			export_supers_count	1
+			supers {
+				constant_pool_index	12		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	14		// javacard/framework/Shareable
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// openSecureChannel
+					Descriptor_Index	1		// (Ljavacard/framework/APDU;)B
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	2		// closeSecureChannel
+					Descriptor_Index	3		// (B)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	4		// decryptVerifyKey
+					Descriptor_Index	5		// (BLjavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	6		// unwrap
+					Descriptor_Index	7		// (BLjavacard/framework/APDU;)V
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	8		// verifyExternalAuthenticate
+					Descriptor_Index	7		// (BLjavacard/framework/APDU;)V
+				}
+			}
+			CAP22_inheritable_count	5
+		}
+		class_info {		// visa/openplatform/OPSystem
+			token	1
+			access_flags	public final
+			name_index	54		// visa/openplatform/OPSystem
+			export_supers_count	1
+			supers {
+				constant_pool_index	12		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	10
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	15		// APPLET_INSTALLED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	18		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	19		// APPLET_SELECTABLE
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	20		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	21		// APPLET_PERSONALIZED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	22		// value = 15
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	23		// APPLET_LOCKED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	24		// value = -1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	25		// APPLET_BLOCKED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	26		// value = 127
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	27		// PACKAGE_LOADED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	28		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	29		// CARD_OP_READY
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	28		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	30		// INITIALIZED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	20		// value = 7
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	31		// CARD_SECURED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	22		// value = 15
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	32		// CARD_LOCKED
+				Descriptor_Index	16		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	17		// ConstantValue
+					attribute_length	2
+					constantvalue_index	26		// value = 127
+				}
+				}
+			}
+			}
+			export_methods_count	12
+			methods {
+				method_info {
+					token	0
+					access_flags	public static
+					name_index	33		// getCardContentState
+					Descriptor_Index	34		// ()B
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	35		// getCardManagerState
+					Descriptor_Index	34		// ()B
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	36		// getCPLCData
+					Descriptor_Index	37		// (Ljavacard/framework/APDU;SSS)V
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	38		// getTriesRemaining
+					Descriptor_Index	34		// ()B
+				}
+				method_info {
+					token	4
+					access_flags	public static
+					name_index	39		// getSecurityDomain
+					Descriptor_Index	40		// ()Lvisa/openplatform/ProviderSecurityDomain;
+				}
+				method_info {
+					token	5
+					access_flags	public static
+					name_index	41		// setCardContentState
+					Descriptor_Index	42		// (B)Z
+				}
+				method_info {
+					token	6
+					access_flags	public static
+					name_index	43		// lockCardManager
+					Descriptor_Index	44		// ()Z
+				}
+				method_info {
+					token	7
+					access_flags	public static
+					name_index	45		// terminateCardManager
+					Descriptor_Index	44		// ()Z
+				}
+				method_info {
+					token	8
+					access_flags	public static
+					name_index	46		// setPin
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	9
+					access_flags	public static
+					name_index	48		// verifyPin
+					Descriptor_Index	47		// (Ljavacard/framework/APDU;S)Z
+				}
+				method_info {
+					token	10
+					access_flags	public static
+					name_index	49		// setATRHistBytes
+					Descriptor_Index	50		// ([BSB)Z
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	51		// equals
+					Descriptor_Index	52		// (Ljava/lang/Object;)Z
+				}
+			}
+			CAP22_inheritable_count	1
+		}
+	}
+}
