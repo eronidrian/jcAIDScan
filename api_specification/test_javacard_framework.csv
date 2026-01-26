@@ -1,0 +1,163 @@
+AID,package name,class token,class name,class access flags,method/field,token,name,access flags,signature/type,value
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_NO_ERROR,static public final,short,-28672
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_BYTES_REMAINING_00,static public final,short,24832
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_WRONG_LENGTH,static public final,short,26368
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_SECURITY_STATUS_NOT_SATISFIED,static public final,short,27010
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_FILE_INVALID,static public final,short,27011
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_DATA_INVALID,static public final,short,27012
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_CONDITIONS_NOT_SATISFIED,static public final,short,27013
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_COMMAND_NOT_ALLOWED,static public final,short,27014
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_APPLET_SELECT_FAILED,static public final,short,27033
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_WRONG_DATA,static public final,short,27264
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_FUNC_NOT_SUPPORTED,static public final,short,27265
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_FILE_NOT_FOUND,static public final,short,27266
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_RECORD_NOT_FOUND,static public final,short,27267
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_INCORRECT_P1P2,static public final,short,27270
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_WRONG_P1P2,static public final,short,27392
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_CORRECT_LENGTH_00,static public final,short,27648
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_INS_NOT_SUPPORTED,static public final,short,27904
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_CLA_NOT_SUPPORTED,static public final,short,28160
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_UNKNOWN,static public final,short,28416
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,SW_FILE_FULL,static public final,short,27268
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_CLA,static public final,byte,0
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_INS,static public final,byte,1
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_P1,static public final,byte,2
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_P2,static public final,byte,3
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_LC,static public final,byte,4
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,OFFSET_CDATA,static public final,byte,5
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,CLA_ISO7816,static public final,byte,0
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,INS_SELECT,static public final,byte,-92
+A0000000620101,javacard.framework,0,ISO7816,public abstract interface,field,255,INS_EXTERNAL_AUTHENTICATE,static public final,byte,-126
+A0000000620101,javacard.framework,1,PIN,public abstract interface,method,0,check,public abstract,boolean(byte[];short;byte)
+A0000000620101,javacard.framework,1,PIN,public abstract interface,method,1,getTriesRemaining,public abstract,byte()
+A0000000620101,javacard.framework,1,PIN,public abstract interface,method,2,isValidated,public abstract,boolean()
+A0000000620101,javacard.framework,1,PIN,public abstract interface,method,3,reset,public abstract,void()
+A0000000620101,javacard.framework,2,Shareable,public abstract interface
+A0000000620101,javacard.framework,3,Applet,public abstract,method,0,<init>,protected,void()
+A0000000620101,javacard.framework,3,Applet,public abstract,method,1,install,static public,void(byte[];short;byte)
+A0000000620101,javacard.framework,3,Applet,public abstract,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,3,Applet,public abstract,method,1,register,final protected,void()
+A0000000620101,javacard.framework,3,Applet,public abstract,method,2,register,final protected,void(byte[];short;byte)
+A0000000620101,javacard.framework,3,Applet,public abstract,method,3,selectingApplet,final protected,boolean()
+A0000000620101,javacard.framework,3,Applet,public abstract,method,4,deselect,public,void()
+A0000000620101,javacard.framework,3,Applet,public abstract,method,5,getShareableInterfaceObject,public,javacard.framework.shareable(javacard.framework.aid;byte)
+A0000000620101,javacard.framework,3,Applet,public abstract,method,6,select,public,boolean()
+A0000000620101,javacard.framework,3,Applet,public abstract,method,7,process,public abstract,void(javacard.framework.apdu)
+A0000000620101,javacard.framework,4,CardException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,4,CardException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,4,CardException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,4,CardException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,4,CardException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,5,CardRuntimeException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,5,CardRuntimeException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,5,CardRuntimeException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,5,CardRuntimeException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,5,CardRuntimeException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,6,AID,public final,method,0,<init>,public,void(byte[];short;byte)
+A0000000620101,javacard.framework,6,AID,public final,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,6,AID,public final,method,1,RIDEquals,public,boolean(javacard.framework.aid)
+A0000000620101,javacard.framework,6,AID,public final,method,2,equals,public,boolean(byte[];short;byte)
+A0000000620101,javacard.framework,6,AID,public final,method,3,getBytes,public,byte(byte[];short)
+A0000000620101,javacard.framework,6,AID,public final,method,4,partialEquals,public,boolean(byte[];short;byte)
+A0000000620101,javacard.framework,7,ISOException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,7,ISOException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,7,ISOException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,7,ISOException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,7,ISOException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,0,abortTransaction,static public,void()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,1,beginTransaction,static public,void()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,2,commitTransaction,static public,void()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,3,getAID,static public,javacard.framework.aid()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,4,getAppletShareableInterfaceObject,static public,javacard.framework.shareable(javacard.framework.aid;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,5,getMaxCommitCapacity,static public,short()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,6,getPreviousContextAID,static public,javacard.framework.aid()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,7,getTransactionDepth,static public,byte()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,8,getUnusedCommitCapacity,static public,short()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,9,getVersion,static public,short()
+A0000000620101,javacard.framework,8,JCSystem,public final,method,10,isTransient,static public,byte(java.lang.object)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,11,lookupAID,static public,javacard.framework.aid(byte[];short;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,12,makeTransientBooleanArray,static public,boolean[](short;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,13,makeTransientByteArray,static public,byte[](short;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,14,makeTransientObjectArray,static public,java.lang.object[](short;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,15,makeTransientShortArray,static public,short[](short;byte)
+A0000000620101,javacard.framework,8,JCSystem,public final,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,8,JCSystem,public final,field,255,NOT_A_TRANSIENT_OBJECT,static public final,byte,0
+A0000000620101,javacard.framework,8,JCSystem,public final,field,255,CLEAR_ON_RESET,static public final,byte,1
+A0000000620101,javacard.framework,8,JCSystem,public final,field,255,CLEAR_ON_DESELECT,static public final,byte,2
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,0,<init>,public,void(byte;byte)
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,1,check,public,boolean(byte[];short;byte)
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,2,getTriesRemaining,public,byte()
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,3,getValidatedFlag,protected,boolean()
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,4,isValidated,public,boolean()
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,5,reset,public,void()
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,6,resetAndUnblock,public,void()
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,7,setValidatedFlag,protected,void(boolean)
+A0000000620101,javacard.framework,9,OwnerPIN,public,method,8,update,public,void(byte[];short;byte)
+A0000000620101,javacard.framework,10,APDU,public final,method,0,getInBlockSize,static public,short()
+A0000000620101,javacard.framework,10,APDU,public final,method,1,getOutBlockSize,static public,short()
+A0000000620101,javacard.framework,10,APDU,public final,method,2,getProtocol,static public,byte()
+A0000000620101,javacard.framework,10,APDU,public final,method,3,waitExtension,static public,void()
+A0000000620101,javacard.framework,10,APDU,public final,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,10,APDU,public final,method,1,getBuffer,public,byte[]()
+A0000000620101,javacard.framework,10,APDU,public final,method,2,getNAD,public,byte()
+A0000000620101,javacard.framework,10,APDU,public final,method,3,receiveBytes,public,short(short)
+A0000000620101,javacard.framework,10,APDU,public final,method,4,sendBytes,public,void(short;short)
+A0000000620101,javacard.framework,10,APDU,public final,method,5,sendBytesLong,public,void(byte[];short;short)
+A0000000620101,javacard.framework,10,APDU,public final,method,6,setIncomingAndReceive,public,short()
+A0000000620101,javacard.framework,10,APDU,public final,method,7,setOutgoing,public,short()
+A0000000620101,javacard.framework,10,APDU,public final,method,8,setOutgoingAndSend,public,void(short;short)
+A0000000620101,javacard.framework,10,APDU,public final,method,9,setOutgoingLength,public,void(short)
+A0000000620101,javacard.framework,10,APDU,public final,method,10,setOutgoingNoChaining,public,short()
+A0000000620101,javacard.framework,10,APDU,public final,field,255,PROTOCOL_T0,static public final,byte,0
+A0000000620101,javacard.framework,10,APDU,public final,field,255,PROTOCOL_T1,static public final,byte,1
+A0000000620101,javacard.framework,11,PINException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,11,PINException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,11,PINException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,11,PINException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,11,PINException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,11,PINException,public,field,255,ILLEGAL_VALUE,static public final,short,1
+A0000000620101,javacard.framework,12,APDUException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,12,APDUException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,12,APDUException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,12,APDUException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,12,APDUException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,12,APDUException,public,field,255,ILLEGAL_USE,static public final,short,1
+A0000000620101,javacard.framework,12,APDUException,public,field,255,BUFFER_BOUNDS,static public final,short,2
+A0000000620101,javacard.framework,12,APDUException,public,field,255,BAD_LENGTH,static public final,short,3
+A0000000620101,javacard.framework,12,APDUException,public,field,255,IO_ERROR,static public final,short,4
+A0000000620101,javacard.framework,12,APDUException,public,field,255,NO_T0_GETRESPONSE,static public final,short,170
+A0000000620101,javacard.framework,12,APDUException,public,field,255,T1_IFD_ABORT,static public final,short,171
+A0000000620101,javacard.framework,13,SystemException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,13,SystemException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,13,SystemException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,13,SystemException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,13,SystemException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,13,SystemException,public,field,255,ILLEGAL_VALUE,static public final,short,1
+A0000000620101,javacard.framework,13,SystemException,public,field,255,NO_TRANSIENT_SPACE,static public final,short,2
+A0000000620101,javacard.framework,13,SystemException,public,field,255,ILLEGAL_TRANSIENT,static public final,short,3
+A0000000620101,javacard.framework,13,SystemException,public,field,255,ILLEGAL_AID,static public final,short,4
+A0000000620101,javacard.framework,13,SystemException,public,field,255,NO_RESOURCE,static public final,short,5
+A0000000620101,javacard.framework,14,TransactionException,public,method,0,<init>,public,void(short)
+A0000000620101,javacard.framework,14,TransactionException,public,method,1,throwIt,static public,void(short)
+A0000000620101,javacard.framework,14,TransactionException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,14,TransactionException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,14,TransactionException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,14,TransactionException,public,field,255,IN_PROGRESS,static public final,short,1
+A0000000620101,javacard.framework,14,TransactionException,public,field,255,NOT_IN_PROGRESS,static public final,short,2
+A0000000620101,javacard.framework,14,TransactionException,public,field,255,BUFFER_FULL,static public final,short,3
+A0000000620101,javacard.framework,14,TransactionException,public,field,255,INTERNAL_FAILURE,static public final,short,4
+A0000000620101,javacard.framework,15,UserException,public,method,0,<init>,public,void()
+A0000000620101,javacard.framework,15,UserException,public,method,1,<init>,public,void(short)
+A0000000620101,javacard.framework,15,UserException,public,method,2,throwIt,static public,void(short)
+A0000000620101,javacard.framework,15,UserException,public,method,0,equals,public,boolean(java.lang.object)
+A0000000620101,javacard.framework,15,UserException,public,method,1,getReason,public,short()
+A0000000620101,javacard.framework,15,UserException,public,method,2,setReason,public,void(short)
+A0000000620101,javacard.framework,16,Util,public,method,0,arrayCompare,static public final,byte(byte[];short;byte[];short;short)
+A0000000620101,javacard.framework,16,Util,public,method,1,arrayCopy,static public final,short(byte[];short;byte[];short;short)
+A0000000620101,javacard.framework,16,Util,public,method,2,arrayCopyNonAtomic,static public final,short(byte[];short;byte[];short;short)
+A0000000620101,javacard.framework,16,Util,public,method,3,arrayFillNonAtomic,static public final,short(byte[];short;short;byte)
+A0000000620101,javacard.framework,16,Util,public,method,4,getShort,static public final,short(byte[];short)
+A0000000620101,javacard.framework,16,Util,public,method,5,makeShort,static public final,short(byte;byte)
+A0000000620101,javacard.framework,16,Util,public,method,6,setShort,static public final,short(byte[];short;short)
+A0000000620101,javacard.framework,16,Util,public,method,0,equals,public,boolean(java.lang.object)
